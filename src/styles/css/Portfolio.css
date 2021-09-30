@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Ubuntu:wght@700&display=swap');
+
+/* Tabs */
+.section{
+    padding: 7% 12%;    
+}
+
+.section_title_text{
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--white);
+}
+.customTabs .active{
+    color: #D29C54;
+}
+
+.customTabs .customTabs_item{
+    padding: 0px;
+    min-width: 0px;
+    margin-right: 20px;
+    text-transform: inherit;
+    font-size: 1.2rem;
+    font-weight: 400;
+    outline-width: 0px;
+    color: whitesmoke;
+}
+/* End of Dialog */
+
+/* Cards */
+.customCard{
+    height: 100%;
+    max-width: 350px;
+    box-shadow: 0px 0px 4p8x 0px rgba(4, 6, 4, 0.8);
+    border-radius: 5px;
+    overflow: hidden;
+    outline-width: 0px;
+    cursor: pointer;
+}
+
+.customCard .customCard_image{
+    height: 140px;
+}
+
+.customCard .customCard_title{
+    font-weight: 500;
+}
+
+.customCard .customCard_caption{
+    color: gray;
+    font-weight: 400;
+}
+/* End of Cards */
+
+
+/* Dialoge */
+.projectDialog .projectDialog_image{
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.projectDialog .projectDialog_description{
+    margin-top: 10px;
+}
+
+.projectDialog .projectDialog_actions{
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.projectDialog .projectDialog_icon{
+    color: darkslategray;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.projectDialog .projectDialog_icon:hover{
+    color:gray;
+    
+}
+/* End of Dialoge */
