@@ -12,11 +12,11 @@ import { FaLaptopCode,FaGraduationCap, FaRegHandPointDown } from "react-icons/fa
 import { BsBriefcaseFill } from "react-icons/bs"
 import {Button} from 'react-bootstrap';
 
-import '../../src/styles/scss/about.scss'
-import '../../src/styles/scss/icons.scss'
 import Edu from '../components/Edu';
 import WExperience from '../components/WExperience';
 import {AboutData} from '../components/data/AboutData';
+import '../../src/styles/scss/about.scss'
+import '../../src/styles/scss/aboutIcons.scss'
 
 
 const Main = styled.main`

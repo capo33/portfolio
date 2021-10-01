@@ -1,78 +1,108 @@
-import { Card, CardActions, CardContent, CardMedia, Dialog, DialogActions, DialogContent, DialogTitle, Grid, Grow, Tab, Tabs, Typography } from '@material-ui/core'
-import React, {useState} from 'react'
-import Projects from '../components/data/Projects';
+import React, {useEffect, useState} from 'react'
+import { angularProject, reactProject, javaScriptProject, databaseProject, experimentalProject, schoolProject } from '../components/data/Projects';
+import PortfolioList from '../components/PortfolioList';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+ 
 import '../styles/css/Portfolio.css'
+import '../styles/scss/portfolio.scss'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
  
 function Portfolio() {
 
-    const [tabValue, setTabValue] = useState("All");
-    const [projectDialoge, setProjectDialoge] = useState(false)
+    const [selected, setSelected] = useState('all')
+    const [data, setData] = useState([])
+    const list = [
+       
+        {
+            id:'exprimental',
+            title:'Exprimental'
+        },
+        {
+            id:'school',
+            title:'School'
+        },
+        {
+            id:'react',
+            title:'React'
+        },
+        {
+            id:'angular',
+            title:'angular'
+        },
+        {
+            id:'javaScript',
+            title:'JavaScript'
+        },
+        {
+            id:'database',
+            title:'Database'
+        },
+    ]
 
+    useEffect(() => {
+        switch (selected) {
+            case 'school':
+                setData(schoolProject)
+                 break;
+            case 'react':
+                setData(reactProject)
+                break;
+            case 'javaScript':
+                setData(javaScriptProject)
+                break;
+            case 'angular':
+                setData(angularProject)
+                break;
+            case 'database':
+                setData(databaseProject)
+                break;
+            case 'exprimental':
+                setData(experimentalProject)
+                break;
+        
+            default:
+                setData(experimentalProject)
+                break;
+        }
+    },[selected])
     return (
         
-        <Grid container spacing={2} className="section mb_30 pb_45 pt_45">
-            {/* Title */}
-            <Grid item className="section_title mb_30">
-                <span></span>
-                <h6 className="section_title_text">My Projects </h6>
-            </Grid>
-
-            {/* Tabs */}
-            <Grid item xs={12}>
-                <Tabs value={tabValue} onChange={(event, newValue) => setTabValue(newValue)} className="customTabs" indicatorColor="primary">
-                    <Tab label="All" value="All" className={tabValue === 'All'? 'customTabs_item active' : 'customTabs_item'}/>
-                       {[...new Set(Projects.map(item => (item.tag)))].map((tag,index) => (
-                                    <Tab key={index}label={tag} value={tag} className={tabValue === tag? 'customTabs_item active' : 'customTabs_item'} />
+       
+               <div className="portfolio-section">
+                    <div className="portfolio">
+                    <h1 className="h-tags">portfolio</h1>   
+                    <ul className="menu-item">
+                        {list.map((item) => (
+                            <PortfolioList 
+                            title={item.title} 
+                            active={selected === item.id} 
+                            setSelected={setSelected}
+                            id={item.id}
+                            key={item.id}
+                            />
                         ))}
-                </Tabs>
-            </Grid>
-            
-            {/* Projects */}
-            <Grid item xs={12}>
-                <Grid container spacing={3} >
-                    {Projects.map((project) => (
-                        <React.Fragment key={project.id}>
-                            {tabValue === project.tag || tabValue === 'All'? (
-                                <Grid item xs={12} sm={6} md={4} key={project.links.id}> 
-                                    <Grow in timeout={1000}>
-                                        <Card className="customCard" onClick={() => setProjectDialoge(project)} key={project.id}>
-                                        <CardMedia className="customCard_image" image={project.image} title={project.title} key={project.id}/>
-                                            <CardActions>
-                                                <CardContent key={project.id}>
-                                                    <Typography variant='body2' className="customCard_title">{project.title}</Typography>
-                                                    <Typography variant='body2' className="customCard_caption">{project.description}</Typography>
-                                                </CardContent>
-                                            </CardActions>
-                                        </Card>
-                                    </Grow>
-                                </Grid>
-                            ) : null}
-                        </React.Fragment>
-                    ))}
-                </Grid>
-            </Grid>
-
-            {/* Dialog */}
-
-         <Dialog open={projectDialoge} onClose={() => setProjectDialoge(false)} className="projectDialog"  maxWidth='sm' // sx, sm, md, lg, xl
-         fullWidth>
-            <DialogTitle onClose={() => setProjectDialoge(false)}>
-                {projectDialoge.title}
-            </DialogTitle>
-            <img src={projectDialoge.image} alt="" className='projectDialog_image'/>
-            <DialogContent> 
-                <Typography className="projectDialog_description">{projectDialoge.caption}</Typography>
-            </DialogContent>
-            <DialogActions className="projectDialog_actions">
-                {projectDialoge?.links?.map((link) => (
-                    <a href={link.link} target="_blank" rel="noreferrer" className="projectDialog_icon">
-                        {link.icon}
-                    </a>
-                ))}
-            </DialogActions>
-        </Dialog>
-
-        </Grid>
+                    </ul>
+                    <div className="data-card">
+                        {data.map((d) => {
+                            return (
+                                <article key={d.id}>
+                                    <img src={d.image} alt={d.title} />
+                                    <h4>{d.title}</h4>
+                                    <p>{d.description}</p>
+                                    <ul>
+                                        <li><a  href={d.github}target="_blank" rel="noreferrer" className="github"><FontAwesomeIcon icon={faGithub} style={{marginRight:'5px'}}/> Github</a></li>
+                                        <li><a  href={d.demo} target="_blank" rel="noreferrer"  className="demo"><FontAwesomeIcon icon={faGlobe} style={{marginRight:'5px'}}/> Demo</a></li>
+                                    </ul>
+                                </article>
+                          
+                            )
+                        })}
+                       
+                    </div>
+                </div>
+               </div>
     )
 }
 

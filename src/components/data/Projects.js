@@ -1,362 +1,153 @@
 import { v4 as uuidv4 } from "uuid"
-import { GitHub, Language } from "@material-ui/icons";
-
-const Projects =  [
+ 
+export const reactProject =  [
     {
         id:uuidv4(),
-        tag:'Angular',
-        image:'image/kahvila.jpg',
-        title: 'Caffee Counter',
-        caption: 'caffee counter',
-        description:"check how many coffees are ordered and served",
-        links: [
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/kahvila/', 
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/kahvila.git',
-                icon:<GitHub />
-            },
-        ]
-    },
-    {
-        id:uuidv4(),
-        tag:'React',
         image:'image/recipe-finder.jpg',
         title: 'Recipe Finder',
-        caption: 'recipe finder.',
-        description:"find your favorite recipe and Let's cook something delicious",
-        links: [
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/recipe-finder/',
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/recipe-finder.git',
-                icon:<GitHub />
-            },
-
-        ]
+        description:"recipe finder",
+        demo: 'https://capo33.github.io/recipe-finder/',
+        github:'https://github.com/capo33/recipe-finder.git'
+        
     },
     {
         id:uuidv4(),
-        tag:'React',
         image:'image/note-keeper.jpg',
         title: 'Note Keeper',
-        caption: 'note keeper.',
-        description:'write done all note',
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/note-keeper/', 
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/note-keeper.git', 
-                icon:<GitHub />
-            },
-        ]
+        description:'note keeper',
+        demo:'https://capo33.github.io/note-keeper/', 
+        github:'https://github.com/capo33/note-keeper.git'
     },
     {
         id:uuidv4(),
-        tag:'React',
         image:'image/react-todo-app.jpg',
         title: 'Todo List',
-        caption: 'todo list.',
-        description:'get your task done',
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/react-todo-app/', 
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/react-todo-app.git', 
-                icon:<GitHub />
-            },
-        ]
-    },
+        description:'organize tasks',
+        demo:'https://capo33.github.io/react-todo-app/',
+        github:'https://github.com/capo33/react-todo-app.git'
+    },  
+]
+export const angularProject =  [
     {
         id:uuidv4(),
-        tag:'JavaScript',
+        image:'image/kahvila.jpg',
+        title: 'Caffee Counter',
+        description: 'caffee counter',
+        demo:'https://capo33.github.io/kahvila/', 
+        github:'https://github.com/capo33/kahvila.git'
+    },
+]
+export const javaScriptProject =  [
+    {
+        id:uuidv4(),
         image:'/image/todo-list.jpg',
         title: 'Todo List',
-        caption: 'todo lists',
-        description: 'simple app to organize the tasks' ,
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/todo-list/', 
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/todo-list.git', 
-                icon:<GitHub />
-            },
-        ]
-    },
+        description: 'organize tasks' ,
+        demo:'https://capo33.github.io/todo-list/', 
+        github:'https://github.com/capo33/todo-list.git'
+    },  
     {
         id:uuidv4(),
-        tag:'JavaScript',
         image:'image/dice-game.jpg',
         title: 'Dice Game',
-        caption: "dice game",
         description: "let's play",
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/dice-game/', 
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/dice-game.git', 
-                icon:<GitHub />
-            },
-        ]
-    },
+        demo:'https://capo33.github.io/dice-game/', 
+        github:'https://github.com/capo33/dice-game.git'
+    },  
+]
+export const databaseProject =  [
     {
         id:uuidv4(),
-        tag:'Database',
         image:'image/blog.jpg',
         title: 'Blog',
-        caption: 'Blog with [ Ejs - Mongodb ]',
-        description:'The Corner',
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://frozen-mesa-31601.herokuapp.com/'
-            }
-        ]
-    },
+        description:'[ Ejs - Mongodb ]',
+        demo:'https://frozen-mesa-31601.herokuapp.com/'
+    }, 
+    
+]
+export const schoolProject =  [
     {
         id:uuidv4(),
-        tag:'Experimental',
-        image:'image/splitting.jpg',
-        title: 'Angular Project',
-        caption: 'split Server',
-        description:"Split server",
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/spliting/', 
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/spliting.git', 
-                icon:<GitHub />
-            },
-        ]
-    },
-    {
-        id:uuidv4(),
-        tag:'Experimental',
-        image:'image/joke-list2.jpg',
-        title: 'Angular Project',
-        caption: 'try to laugh.',
-        description:'Jokes',
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/joke-list/', 
-                icon:<Language />
-            
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/joke-list.git', 
-                icon:<GitHub />
-            
-            },
-        ]
-    },
-    {
-        id:uuidv4(),
-        tag:'Experimental',
-        image:'image/warning-et-success.jpg',
-        title: 'Angular Project',
-        caption: 'success and warning page',
-        description:'Success and warning page',
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/warning-et-success/', 
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/warning-et-success.git', 
-                icon:<GitHub />
-            },
-        ]
-    },
-    {
-        id:uuidv4(),
-        tag:'Experimental',
-        image:'image/crazy-button.jpg',
-        title: 'JavaScript Project',
-        caption: 'try to stop the buttons.',
-        description:'Crazy Buttons.',
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/crazy-button/', 
-                icon:<Language />
-            
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/crazy-button.git', 
-                icon:<GitHub />
-            
-            },
-        ]
-    },
-    {
-        id:uuidv4(),
-        tag:'Experimental',
-        image:'image/egyption-gods.jpg',
-        title: 'React Project',
-        caption: 'The most famous ancient Egyptian deities',
-        description:'Egyption Deities',
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/egyption-gods/', 
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/egyption-gods.git', 
-                icon:<GitHub />
-            },
-        ]
-    },
-    {
-        id:uuidv4(),
-        tag:'Experimental',
-        image:'image/emojipedia.jpg',
-        title: 'React Project',
-        caption: 'emoji meaning.',
-        description:'Emojipedia',
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/emojipedia/', 
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/emojipedia.git', 
-                icon:<GitHub />
-            },
-        ]
-    },
-    {
-        id:uuidv4(),
-        tag:'Experimental',
-        image:'image/Digital-Marketing.jpg',
-        title: 'Css Project',
-        caption: 'digital marketing',
-        description:'Digital Marketing',
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/Digital-Marketing/', 
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/Digital-Marketing.git', 
-                icon:<GitHub />
-            },
-        ]
-    },
-    {
-        id:uuidv4(),
-        tag:'Experimental',
-        image:'image/tindog.jpg',
-        title: 'Css Project',
-        caption: 'help your dog not feel lonely',
-        description:'Tindog',
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/tindog/',
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/tindog.git',
-                icon:<GitHub />
-            },
-        ]
-    },
-    {
-        id:uuidv4(),
-        tag:'Experimental',
-        image:'image/travel-agency.jpg',
-        title: 'Css Project',
-        caption: 'visit egypt 🛫🧡',
-        description:'Travel Agency',
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/travel-agency/', 
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/travel-agency.git',
-                icon:<GitHub />
-            },
-        ]
-    },
-    {
-        id:uuidv4(),
-        tag:'School Projects',
         image:'image/school-projects.jpg',
         title: 'School Projects',
-        caption: 'School Projects',
-        description:'Html, Css, JavaScript, Angular',
-        links: [
-            
-            {
-                id:uuidv4(),
-                link:'https://capo33.github.io/school-projects/', 
-                icon:<Language />
-            },
-            {
-                id:uuidv4(),
-                link:'https://github.com/capo33/school-projects.git', 
-                icon:<GitHub />
-            },
-        ]
+        description:'Html, Css, Angular',
+        demo:'https://capo33.github.io/school-projects/', 
+        github:'https://github.com/capo33/school-projects.git'
     },
 
 ]
-
-export default Projects
+export const experimentalProject =  [
+    {
+        id:uuidv4(),
+        image:'image/splitting.jpg',
+        title: 'Angular Project',
+        description:"Split server",
+        demo:'https://capo33.github.io/spliting/',
+        github:'https://github.com/capo33/spliting.git'
+    },  
+    {
+        id:uuidv4(),
+        image:'image/joke-list2.jpg',
+        title: 'Angular Project',
+        description:'Jokes',
+        demo:'https://capo33.github.io/joke-list/', 
+        github:'https://github.com/capo33/joke-list.git'
+    },
+    {
+        id:uuidv4(),
+        image:'image/warning-et-success.jpg',
+        title: 'Angular Project',
+        description:'Success and warning',
+        demo:'https://capo33.github.io/warning-et-success/', 
+        github:'https://github.com/capo33/warning-et-success.git'
+    },
+    {
+        id:uuidv4(),
+        image:'image/crazy-button.jpg',
+        title: 'JavaScript Project',
+        description:'Crazy Buttons.',
+        demo:'https://capo33.github.io/crazy-button/', 
+        github:'https://github.com/capo33/crazy-button.git'
+    },
+    {
+        id:uuidv4(),
+        image:'image/egyption-gods.jpg',
+        title: 'React Project',
+        description:'Egyption Deities',
+        demo:'https://capo33.github.io/egyption-gods/', 
+        github:'https://github.com/capo33/egyption-gods.git'
+    },
+    {
+        id:uuidv4(),
+        image:'image/emojipedia.jpg',
+        title: 'React Project',
+        description:'Emojipedia',
+        demo:'https://capo33.github.io/emojipedia/', 
+        github:'https://github.com/capo33/emojipedia.git'
+    },
+    {
+        id:uuidv4(),
+        image:'image/Digital-Marketing.jpg',
+        title: 'Css Project',
+        description:'Digital Marketing',
+        demo:'https://capo33.github.io/Digital-Marketing/', 
+        github:'https://github.com/capo33/Digital-Marketing.git'
+    },
+    {
+        id:uuidv4(),
+        image:'image/tindog.jpg',
+        title: 'Css Project',
+        description:'Tindog',
+        demo:'https://capo33.github.io/tindog/',
+        github:'https://github.com/capo33/tindog.git'
+    },
+    {
+        id:uuidv4(),
+        image:'image/travel-agency.jpg',
+        title: 'Css Project',
+        description:'Travel Agency',
+        demo:'https://capo33.github.io/travel-agency/', 
+        github:'https://github.com/capo33/travel-agency.git'
+    },
+   
+]

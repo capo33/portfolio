@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/scss/about.scss'
-import '../../src/styles/scss/icons.scss'
+import '../../src/styles/scss/aboutIcons.scss'
 
 function Edu(props) {
     return (
