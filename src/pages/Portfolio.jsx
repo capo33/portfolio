@@ -16,8 +16,8 @@ function Portfolio() {
     const list = [
        
         {
-            id:'exprimental',
-            title:'Exprimental'
+            id:'experimental',
+            title:'Experimental'
         },
         {
             id:'school',
