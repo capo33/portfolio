@@ -1,6 +1,6 @@
 .portfolio-section{
-    padding: 0 7%; 
-    
+    padding: 3% 7%; 
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);    
     .portfolio{
         display: flex;
         flex-direction: column;
@@ -53,7 +53,8 @@
             max-width: 1100px;
             margin: auto;
             gap: 20px;
-            color: white;
+            color:   #EADFDF;
+            background-blend-mode: screen;;
             padding-bottom: 20px;
 
             @media screen and (max-width:768px){
@@ -94,23 +95,25 @@
                         text-decoration: none;
                         cursor: pointer;
                         border-radius: 5px;
-                        color: white;
+                        
                         
                         @media screen and(max-width:768px) {
                             font-size: 10px;
                         }
                         &.github{
-                            background-color: #333;
+                            background-color: #000;
                             padding: 5px;
                             font-size: 15px;
+                            color: white;
                             @media screen and(max-width:768px) {
                                 font-size: 12px;
                             }
                         }
                         &.demo{
-                            background-color: rgb(43, 43, 180);
+                            background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);                            
                             padding: 5px;
                             font-size: 15px;
+                            color: #000;
                             @media screen and(max-width:768px) {
                                 font-size: 12px;
                             }

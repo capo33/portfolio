@@ -13,8 +13,9 @@ img{
 .contact3 h3,
 .contact3 h4,
 .contact3 h5,
-.contact3 h6 {
-  color: #3e4555;
+.contact3 h6 ,
+p{
+  color: #000;
 }
 
 .contact3 .font-weight-medium {

@@ -4,7 +4,7 @@ import { SiRedux } from "react-icons/si"
 export const AboutData = [
     {
         id:1,
-        title:"My name is Mohamed, Egyptian, Finnish citizen since 2016. Currently I am web development student @Business College Helsinki in a encoder training Angular and .Net.", 
+        title:"My name is Mohamed, Egyptian, Finnish citizen since 2016. Currently I am a web development student @Business College Helsinki in an encoder training Angular and .Net.", 
     },
     {
         id:2,
@@ -20,11 +20,11 @@ export const AboutData = [
     },
     {
         id:5,
-        title:"As For coding i feel that everything is getting better than ever.", 
+        title:"As for coding, I feel that everything is getting better than ever.", 
     },
     {
         id:6,
-        title:"Now I am moving forward on [-- React  " ,
+        title:"Now I am moving forward on [ React  " ,
         icon:<FaReact />,
         title1:" - Redux  " ,
         icon1:<SiRedux />,

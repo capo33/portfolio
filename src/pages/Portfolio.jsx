@@ -93,7 +93,7 @@ function Portfolio() {
                                     <p>{d.description}</p>
                                     <ul>
                                         <li><a  href={d.github}target="_blank" rel="noreferrer" className="github"><FontAwesomeIcon icon={faGithub} style={{marginRight:'5px'}}/> Github</a></li>
-                                        <li><a  href={d.demo} target="_blank" rel="noreferrer"  className="demo"><FontAwesomeIcon icon={faGlobe} style={{marginRight:'5px'}}/> Demo</a></li>
+                                        <li><a  href={d.demo} target="_blank" rel="noreferrer"  className="demo"><FontAwesomeIcon icon={faGlobe} style={{marginRight:'5px'}}/>Demo</a></li>
                                     </ul>
                                 </article>
                           

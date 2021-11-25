@@ -96,7 +96,7 @@ function Contacts() {
                                   </div>
                                   <div>
                                       <h6 className="font-weight-medium">Address</h6>
-                                      <p className="">{ResumeData.adresss}</p>
+                                      <p>{ResumeData.adresss}</p>
                                   </div>
                               </div>
                           </div>

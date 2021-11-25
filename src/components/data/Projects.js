@@ -5,8 +5,17 @@ export const reactProject =  [
         id:uuidv4(),
         image:'image/recipe-finder.jpg',
         title: 'Recipe Finder',
-        description:"recipe finder",
+        description:"react-hooks",
         demo: 'https://capo33.github.io/recipe-finder/',
+        github:'https://github.com/capo33/recipe-finder.git'
+        
+    },
+    {
+        id:uuidv4(),
+        image:'image/space-x.jpg',
+        title: 'SpaceX',
+        description:"grapgh-ql - react - apollo",
+        demo: 'https://boiling-forest-08686.herokuapp.com/',
         github:'https://github.com/capo33/recipe-finder.git'
         
     },
@@ -14,9 +23,18 @@ export const reactProject =  [
         id:uuidv4(),
         image:'image/note-keeper.jpg',
         title: 'Note Keeper',
-        description:'note keeper',
+        description:'react-hooks',
         demo:'https://capo33.github.io/note-keeper/', 
         github:'https://github.com/capo33/note-keeper.git'
+    },
+    {
+        id:uuidv4(),
+        // image:'https://onlinescreenshot.com/files/1637761361-2837644518-capo33.github.io.jpeg',
+        image:'image/grocery-list.jpg',
+        title: 'Grocery List',
+        description:'react-hooks',
+        demo:'https://capo33.github.io/Grocery-List/', 
+        github:'https://github.com/capo33/Grocery-List'
     },
     {
         id:uuidv4(),
@@ -45,6 +63,14 @@ export const javaScriptProject =  [
         description: 'organize tasks' ,
         demo:'https://capo33.github.io/todo-list/', 
         github:'https://github.com/capo33/todo-list.git'
+    },  
+    {
+        id:uuidv4(),
+        image:'/image/text-speaker.jpg',
+        title: 'Text Speaker',
+        description: 'text to speech' ,
+        demo:'https://capo33.github.io/Text-to-Speech/', 
+        github:'https://github.com/capo33/Text-to-Speech'
     },  
     {
         id:uuidv4(),
