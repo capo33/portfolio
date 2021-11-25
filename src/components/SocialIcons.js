@@ -1,8 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-// import { faFacebookF, faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-
 
     const Socialicons = [
        
@@ -20,28 +18,13 @@ import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-ic
             className: 'icon github',
             icon:<FontAwesomeIcon icon ={faGithub}/>
         },
-        // {
-        //     id:3,
-        //     iconLink:'https://www.facebook.com/people/Mohamed-Adel/599905285/',
-        //     iconName:'Facebook',
-        //     className: 'icon facebook',
-        //     icon:<FontAwesomeIcon icon ={faFacebookF}/>
-        // },
         {
             id:3,
             iconLink:'https://twitter.com/Mohamed33727072',
             iconName:'Twitter',
             className: 'icon twitter',
             icon:<FontAwesomeIcon icon ={faTwitter}/>
-        },
-        // {
-        //     id:5,
-        //     iconLink:'https://www.instagram.com/egy_kapo/',
-        //     iconName:'Instagram',
-        //     className: 'icon instagram',
-        //     icon:<FontAwesomeIcon icon ={faInstagram}/>
-        // },
-       
+        },       
     ]
     
 
