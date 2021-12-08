@@ -31,14 +31,14 @@ function Home() {
         <section className="page-section clearfix">
             <div className="container">
                 <div className="intro">
-                    <img className="intro-img img-fluid mb-3 mb-lg-1 rounded" src={Capo} alt="..." />
-                    <div className="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <img className="intro-img img-fluid mb-3 mb-lg-1 rounded" src={Capo} alt="Capo" />
+                    <div className="intro-text text-center bg-faded p-5 rounded">
                         <h2 className="section-heading">
                             <span className="section-heading-upper">Hello 🖐</span>
                             <span className="section-heading-lower"> I'M Mohamed</span>
                         </h2>
-                        <p className=" mb-3 p__info">Wep Development Student </p>
-                        <div className="intro-button mx-auto"><Link className="btn btn-primary btn-xl " to="/contact">Contact Me <span><AiOutlineArrowRight/></span> </Link></div>
+                        <p className=" mb-3 p__info">Fainal Stage Wep Development Student </p>
+                         
                     </div>
                 </div>
             </div>
@@ -47,15 +47,15 @@ function Home() {
          <div className="container">
              <div className="row">
                  <div className="col-xl-9 mx-auto">
-                     <div className="cta-inner bg-faded text-center rounded">
+                     <div className="cta-inner bg-faded rounded1">
                          <h2 className="section-heading">
                             <span className="section-heading-lower">Portfolio</span>
                          </h2>
-                         <p className="mb-0">This portfolio has been built using React ❤</p>
-                         <p className="mb-0">I have used all my development skills as a student  to create it and design it </p>
-                         <p className="mb-0">Styles i have used (pure css, sass, styled component, reactstrap)</p>
+                         <p className="">This portfolio has been built using React ❤</p>
+                         <p className="">I have used all my development skills as a student  to create it and design it </p>
+                         <p className=" ">Styles i have used (pure css, sass, styled component, reactstrap and material-ui)</p>
                          <div >
-                        <Link className=" btn btn-primary mt-2" to="/projects">Explore My Projects</Link>
+                        <Link className=" btn btn-info btn-lg mt-2" to="/projects">Explore My Projects <AiOutlineArrowRight /></Link>
                          </div>
                      </div>
                  </div>

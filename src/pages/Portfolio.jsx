@@ -2,8 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { angularProject, reactProject, javaScriptProject, databaseProject, experimentalProject, schoolProject } from '../components/data/Projects';
 import PortfolioList from '../components/PortfolioList';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
- 
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../styles/css/Portfolio.css'
 import '../styles/scss/portfolio.scss'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -36,8 +35,8 @@ function Portfolio() {
             title:'JavaScript'
         },
         {
-            id:'database',
-            title:'Database'
+            id:'Api',
+            title:'Api'
         },
     ]
 
@@ -55,7 +54,7 @@ function Portfolio() {
             case 'angular':
                 setData(angularProject)
                 break;
-            case 'database':
+            case 'Api':
                 setData(databaseProject)
                 break;
             case 'exprimental':
@@ -67,12 +66,12 @@ function Portfolio() {
                 break;
         }
     },[selected])
+
+    
     return (
-        
-       
                <div className="portfolio-section">
                     <div className="portfolio">
-                    <h1 className="h-tags">portfolio</h1>   
+                    <h1 className="h-tags">Portfolio</h1>   
                     <ul className="menu-item">
                         {list.map((item) => (
                             <PortfolioList 
@@ -84,19 +83,21 @@ function Portfolio() {
                             />
                         ))}
                     </ul>
-                    <div className="data-card">
+                    <div className=" data-card">
                         {data.map((d) => {
                             return (
-                                <article key={d.id}>
-                                    <img src={d.image} alt={d.title} />
-                                    <h4>{d.title}</h4>
-                                    <p>{d.description}</p>
-                                    <ul>
-                                        <li><a  href={d.github}target="_blank" rel="noreferrer" className="github"><FontAwesomeIcon icon={faGithub} style={{marginRight:'5px'}}/> Github</a></li>
-                                        <li><a  href={d.demo} target="_blank" rel="noreferrer"  className="demo"><FontAwesomeIcon icon={faGlobe} style={{marginRight:'5px'}}/>Demo</a></li>
-                                    </ul>
-                                </article>
-                          
+                            <div className="cardy" key={d.id}>
+                                      <img src={d.image} alt={d.title} />
+                                     <div className="card-body">
+                                     <h4>{d.title}</h4>
+                                     <p>{d.description}</p>
+                                     <ul>
+                                         <li><a  href={d.github}target="_blank" rel="noreferrer" className="github"><FontAwesomeIcon icon={faGithub} style={{marginRight:'5px'}}/> Github</a></li>
+                                         <li><a  href={d.demo} target="_blank" rel="noreferrer"  className="demo"><FontAwesomeIcon icon={faGlobe} style={{marginRight:'5px'}}/>Demo</a></li>
+                                     </ul>
+                                     </div>
+                                 </div>
+
                             )
                         })}
                        

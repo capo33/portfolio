@@ -3,44 +3,50 @@ import { v4 as uuidv4 } from "uuid"
 export const reactProject =  [
     {
         id:uuidv4(),
-        image:'image/recipe-finder.jpg',
+        image:'image/star.png',
+        title: 'Star Wars',
+        description:"UseQuery",
+        demo: 'https://capo33.github.io/StarWars/',    
+        github:'https://github.com/capo33/StarWars'    
+    },
+    {
+        id:uuidv4(),
+        image:'image/finder.png',
         title: 'Recipe Finder',
-        description:"react-hooks",
+        description:"React-hooks",
         demo: 'https://capo33.github.io/recipe-finder/',
         github:'https://github.com/capo33/recipe-finder.git'
         
     },
     {
         id:uuidv4(),
-        image:'image/space-x.jpg',
-        title: 'SpaceX',
-        description:"grapgh-ql - react - apollo",
-        demo: 'https://boiling-forest-08686.herokuapp.com/',
-        github:'https://github.com/capo33/recipe-finder.git'
-        
+        image:'image/pokemon.png',
+        title: 'Pokemon Evolution',
+        description:'React-hooks',
+        demo:'https://capo33.github.io/pokemon-evolution/', 
+        github:'https://github.com/capo33/note-keeper.git'
     },
     {
         id:uuidv4(),
-        image:'image/note-keeper.jpg',
+        image:'image/keeper.png',
         title: 'Note Keeper',
-        description:'react-hooks',
+        description:'React-hooks',
         demo:'https://capo33.github.io/note-keeper/', 
         github:'https://github.com/capo33/note-keeper.git'
     },
     {
         id:uuidv4(),
-        // image:'https://onlinescreenshot.com/files/1637761361-2837644518-capo33.github.io.jpeg',
-        image:'image/grocery-list.jpg',
+        image:'image/grocery.png',
         title: 'Grocery List',
-        description:'react-hooks',
+        description:'React-hooks - [ Local Storage ]',
         demo:'https://capo33.github.io/Grocery-List/', 
         github:'https://github.com/capo33/Grocery-List'
     },
     {
         id:uuidv4(),
-        image:'image/react-todo-app.jpg',
-        title: 'Todo List',
-        description:'organize tasks',
+        image:'image/todo.png',
+        title: 'Todo App',
+        description:'React-hooks',
         demo:'https://capo33.github.io/react-todo-app/',
         github:'https://github.com/capo33/react-todo-app.git'
     },  
@@ -48,7 +54,7 @@ export const reactProject =  [
 export const angularProject =  [
     {
         id:uuidv4(),
-        image:'image/kahvila.jpg',
+        image:'image/kahvila.png',
         title: 'Caffee Counter',
         description: 'caffee counter',
         demo:'https://capo33.github.io/kahvila/', 
@@ -58,17 +64,9 @@ export const angularProject =  [
 export const javaScriptProject =  [
     {
         id:uuidv4(),
-        image:'/image/todo-list.jpg',
-        title: 'Todo List',
-        description: 'organize tasks' ,
-        demo:'https://capo33.github.io/todo-list/', 
-        github:'https://github.com/capo33/todo-list.git'
-    },  
-    {
-        id:uuidv4(),
-        image:'/image/text-speaker.jpg',
+        image:'/image/speaker.png',
         title: 'Text Speaker',
-        description: 'text to speech' ,
+        description: 'JS' ,
         demo:'https://capo33.github.io/Text-to-Speech/', 
         github:'https://github.com/capo33/Text-to-Speech'
     },  
@@ -76,19 +74,51 @@ export const javaScriptProject =  [
         id:uuidv4(),
         image:'image/dice-game.jpg',
         title: 'Dice Game',
-        description: "let's play",
+        description: "JS",
         demo:'https://capo33.github.io/dice-game/', 
         github:'https://github.com/capo33/dice-game.git'
+    },  
+    {
+        id:uuidv4(),
+        image:'image/memory.png',
+        title: 'Memory Game',
+        description: "JS",
+        demo:'https://capo33.github.io/memory-game/', 
+        github:'https://github.com/capo33/memory-game'
     },  
 ]
 export const databaseProject =  [
     {
         id:uuidv4(),
-        image:'image/blog.jpg',
+        image:'image/blog.png',
         title: 'Blog',
-        description:'[ Ejs - Mongodb ]',
+        description:'Rest-api - [ ejs - mongodb ]',
         demo:'https://frozen-mesa-31601.herokuapp.com/'
     }, 
+    {
+        id:uuidv4(),
+        image:'image/animazon.png',
+        title: 'Animazon',
+        description:"GrapghQL - [ MERN - React - Apollo ]",
+        demo: 'https://animazon-client.herokuapp.com/',   
+        github:'https://github.com/capo33/animazon-client'     
+    },
+    {
+        id:uuidv4(),
+        image:'image/morty.png',
+        title: 'Morty Characters',
+        description:"GrapghQL - [ React - Apollo ]",
+        demo: 'https://morty-characters.herokuapp.com/',   
+        github:'https://github.com/capo33/Morty-Characters'     
+        
+    },
+    {
+        id:uuidv4(),
+        image:'image/16.png',
+        title: 'SpaceX',
+        description:"GrapghQL - [ React - Apollo ]",
+        demo: 'https://boiling-forest-08686.herokuapp.com/',        
+    },
     
 ]
 export const schoolProject =  [
@@ -96,7 +126,7 @@ export const schoolProject =  [
         id:uuidv4(),
         image:'image/school-projects.jpg',
         title: 'School Projects',
-        description:'Html, Css, Angular',
+        description:'Html - Css - Angular',
         demo:'https://capo33.github.io/school-projects/', 
         github:'https://github.com/capo33/school-projects.git'
     },

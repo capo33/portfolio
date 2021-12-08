@@ -3,20 +3,13 @@
   font-family: "Montserrat", sans-serif;
   color: #8d97ad;
   font-weight: 300;
-  background-color: var(--white);
+  background-color: var(--background-color);
+  margin-top: 3%;
 }
 img{
     width: 100%;
 }
-.contact3 h1,
-.contact3 h2,
-.contact3 h3,
-.contact3 h4,
-.contact3 h5,
-.contact3 h6 ,
-p{
-  color: #000;
-}
+ 
 
 .contact3 .font-weight-medium {
   font-weight: 500;
