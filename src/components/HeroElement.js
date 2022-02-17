@@ -17,12 +17,12 @@ const ScrollAnimation = keyframes`
   }
 `;
 
-export const ScrollDown = styled.button`
+export const ScrollDown = styled.div`
    display: flex;
   justify-content: flex-start;
   padding-top: 5rem;
   border: none;
-  background-color: #222831;
+  /* background-color: #222831; */
   text-decoration: none;
   align-content: center;
   cursor: pointer;

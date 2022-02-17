@@ -87,7 +87,7 @@ function Home() {
     </div>
 </section>
 
-<span to="/#" ref={myRef}>
+<span ref={myRef}>
         <About />
 </span>
  
