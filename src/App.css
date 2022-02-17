@@ -3,26 +3,36 @@
 
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Roboto:400,700');
 
-* {
+ @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Montserrat:wght@600&family=Open+Sans&family=Supermercado+One&display=swap');
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Poppins", sans-serif; */
-  /* overflow-x: hidden; */
  
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  }
+}
 ::-webkit-scrollbar {
   display: none;
 }
 
-body{
-  background: var(--background-color);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+html{
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+   overflow-x: hidden;
+   background-color: #eeeeee;
 }
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+::-webkit-scrollbar {
+  background-color: var(--primary-color);
+  width: 0.3rem;
+}
+
 
 :root{ 
   
@@ -35,17 +45,14 @@ body{
   --gray-2: #363636;
   --white : white;
   --black: black;
-  --primary-color: #FF6B6B;
-  --primary-color-hover: scale-color(#FF6B6B, lightness: 32%);
+  --primary-color: #662d91;
+  --secondary-color: #ed6991;
+  --font-family: "Poppins", sans-serif;
   --color-1: black;
   --color-2: white;
   --color-3: rgb(168, 50, 121);
 }
 
-html{
-   font-family: 'Manrope', sans-serif;
-   overflow-x: hidden;
-}
 
 ul,li{
   list-style: none;

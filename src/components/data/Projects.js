@@ -1,209 +1,306 @@
+import { FaGithub } from "react-icons/fa"
+import { BiGlobe } from "react-icons/bi"
 import { v4 as uuidv4 } from "uuid"
  
-export const reactProject =  [
-    {
-        id:uuidv4(),
-        image:'image/star.png',
-        title: 'Star Wars',
-        description:"UseQuery",
-        demo: 'https://capo33.github.io/StarWars/',    
-        github:'https://github.com/capo33/StarWars'    
-    },
-    {
-        id:uuidv4(),
-        image:'image/finder.png',
-        title: 'Recipe Finder',
-        description:"React-hooks",
-        demo: 'https://capo33.github.io/recipe-finder/',
-        github:'https://github.com/capo33/recipe-finder.git'
-        
-    },
-    {
-        id:uuidv4(),
-        image:'image/pokemon.png',
-        title: 'Pokemon Evolution',
-        description:'React-hooks',
-        demo:'https://capo33.github.io/pokemon-evolution/', 
-        github:'https://github.com/capo33/note-keeper.git'
-    },
-    {
-        id:uuidv4(),
-        image:'image/keeper.png',
-        title: 'Note Keeper',
-        description:'React-hooks',
-        demo:'https://capo33.github.io/note-keeper/', 
-        github:'https://github.com/capo33/note-keeper.git'
-    },
-    {
-        id:uuidv4(),
-        image:'image/grocery.png',
-        title: 'Grocery List',
-        description:'React-hooks - [ Local Storage ]',
-        demo:'https://capo33.github.io/Grocery-List/', 
-        github:'https://github.com/capo33/Grocery-List'
-    },
-    {
-        id:uuidv4(),
-        image:'image/todo.png',
-        title: 'Todo App',
-        description:'React-hooks',
-        demo:'https://capo33.github.io/react-todo-app/',
-        github:'https://github.com/capo33/react-todo-app.git'
-    },  
-]
-export const angularProject =  [
-    {
-        id:uuidv4(),
-        image:'image/kahvila.png',
-        title: 'Caffee Counter',
-        description: 'caffee counter',
-        demo:'https://capo33.github.io/kahvila/', 
-        github:'https://github.com/capo33/kahvila.git'
-    },
-]
-export const javaScriptProject =  [
-    {
-        id:uuidv4(),
-        image:'/image/speaker.png',
-        title: 'Text Speaker',
-        description: 'JS' ,
-        demo:'https://capo33.github.io/Text-to-Speech/', 
-        github:'https://github.com/capo33/Text-to-Speech'
-    },  
-    {
-        id:uuidv4(),
-        image:'image/dice-game.jpg',
-        title: 'Dice Game',
-        description: "JS",
-        demo:'https://capo33.github.io/dice-game/', 
-        github:'https://github.com/capo33/dice-game.git'
-    },  
-    {
-        id:uuidv4(),
-        image:'image/memory.png',
-        title: 'Memory Game',
-        description: "JS",
-        demo:'https://capo33.github.io/memory-game/', 
-        github:'https://github.com/capo33/memory-game'
-    },  
-]
-export const databaseProject =  [
-    {
-        id:uuidv4(),
-        image:'image/blog.png',
-        title: 'Blog',
-        description:'Rest-api - [ ejs - mongodb ]',
-        demo:'https://frozen-mesa-31601.herokuapp.com/'
-    }, 
-    {
-        id:uuidv4(),
-        image:'image/animazon.png',
-        title: 'Animazon',
-        description:"GrapghQL - [ MERN - React - Apollo ]",
-        demo: 'https://animazon-client.herokuapp.com/',   
-        github:'https://github.com/capo33/animazon-client'     
-    },
-    {
-        id:uuidv4(),
-        image:'image/morty.png',
-        title: 'Morty Characters',
-        description:"GrapghQL - [ React - Apollo ]",
-        demo: 'https://morty-characters.herokuapp.com/',   
-        github:'https://github.com/capo33/Morty-Characters'     
-        
-    },
-    {
-        id:uuidv4(),
-        image:'image/16.png',
-        title: 'SpaceX',
-        description:"GrapghQL - [ React - Apollo ]",
-        demo: 'https://boiling-forest-08686.herokuapp.com/',        
-    },
-    
-]
-export const schoolProject =  [
-    {
-        id:uuidv4(),
-        image:'image/school-projects.jpg',
-        title: 'School Projects',
-        description:'Html - Css - Angular',
-        demo:'https://capo33.github.io/school-projects/', 
-        github:'https://github.com/capo33/school-projects.git'
-    },
-
-]
-export const experimentalProject =  [
-    {
-        id:uuidv4(),
-        image:'image/splitting.jpg',
-        title: 'Angular Project',
-        description:"Split server",
-        demo:'https://capo33.github.io/spliting/',
-        github:'https://github.com/capo33/spliting.git'
-    },  
-    {
-        id:uuidv4(),
-        image:'image/joke-list2.jpg',
-        title: 'Angular Project',
-        description:'Jokes',
-        demo:'https://capo33.github.io/joke-list/', 
-        github:'https://github.com/capo33/joke-list.git'
-    },
-    {
-        id:uuidv4(),
-        image:'image/warning-et-success.jpg',
-        title: 'Angular Project',
-        description:'Success and warning',
-        demo:'https://capo33.github.io/warning-et-success/', 
-        github:'https://github.com/capo33/warning-et-success.git'
-    },
-    {
-        id:uuidv4(),
-        image:'image/crazy-button.jpg',
-        title: 'JavaScript Project',
-        description:'Crazy Buttons.',
-        demo:'https://capo33.github.io/crazy-button/', 
-        github:'https://github.com/capo33/crazy-button.git'
-    },
-    {
-        id:uuidv4(),
-        image:'image/egyption-gods.jpg',
-        title: 'React Project',
-        description:'Egyption Deities',
-        demo:'https://capo33.github.io/egyption-gods/', 
-        github:'https://github.com/capo33/egyption-gods.git'
-    },
-    {
-        id:uuidv4(),
-        image:'image/emojipedia.jpg',
-        title: 'React Project',
-        description:'Emojipedia',
-        demo:'https://capo33.github.io/emojipedia/', 
-        github:'https://github.com/capo33/emojipedia.git'
-    },
-    {
-        id:uuidv4(),
-        image:'image/Digital-Marketing.jpg',
-        title: 'Css Project',
-        description:'Digital Marketing',
-        demo:'https://capo33.github.io/Digital-Marketing/', 
-        github:'https://github.com/capo33/Digital-Marketing.git'
-    },
-    {
-        id:uuidv4(),
-        image:'image/tindog.jpg',
-        title: 'Css Project',
-        description:'Tindog',
-        demo:'https://capo33.github.io/tindog/',
-        github:'https://github.com/capo33/tindog.git'
-    },
-    {
-        id:uuidv4(),
-        image:'image/travel-agency.jpg',
-        title: 'Css Project',
-        description:'Travel Agency',
-        demo:'https://capo33.github.io/travel-agency/', 
-        github:'https://github.com/capo33/travel-agency.git'
-    },
-   
-]
+export const portfolio= [
+        {
+            id:uuidv4(),
+            tag:"react",
+            caption:" A short description",
+            image:'image/star.png',
+            title: 'Star Wars',
+            description:"UseQuery",
+                links: [
+                { 
+                    id:uuidv4(),link:'https://capo33.github.io/StarWars/', icon: <BiGlobe /> },
+                { 
+                    id:uuidv4(),link:'https://www.github.com/capo33/StarWars', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"react",
+            caption:" A short description",
+            image:'image/finder.png',
+            title: 'Recipe Finder',
+            description:"React-hooks",
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/recipe-finder/', icon: <BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/recipe-finder.git', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"react",
+            caption:" A short description",
+            image:'image/pokemon.png',
+            title: 'Pokemon Evolution',
+            description:'React-hooks',
+                 links: [
+                { id:uuidv4(),link:'https://capo33.github.io/pokemon-evolution/', icon:  <BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/pokemon-evolution', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"react",
+            caption:" A short description",
+            image:'image/keeper.png',
+            title: 'Note Keeper',
+            description:'React-hooks',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/note-keeper/', icon:  <BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/note-keeper.git', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"react",
+            caption:" A short description",
+            image:'image/grocery.png',
+            title: 'Grocery List',
+            description:'React-hooks - [ Local Storage ]',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/Grocery-List/', icon:  <BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/Grocery-List', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"react",
+            caption:" A short description",
+            image:'image/todo.png',
+            title: 'Todo App',
+            description:'React-hooks',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/react-todo-app/', icon:  <BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/react-todo-app.git', icon: <FaGithub /> },
+                ]
+        },
+        {
+            id:uuidv4(),
+            tag:"angular",
+            caption:" A short description",
+            image:'image/kahvila.png',
+            title: 'Caffee Counter',
+            description: 'caffee counter',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/kahvila/', icon: <BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/kahvila.git', icon: <FaGithub /> },
+                ]
+        },
+        {
+            id:uuidv4(),
+            tag:"angular",
+            caption:" A short description",
+            image:'image/kahvila.png',
+            title: 'Caffee Counter',
+            description: 'caffee counter',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/kahvila/', icon:  <BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/kahvila.git', icon: <FaGithub /> },
+                ]
+        },
+        {
+            id:uuidv4(),
+            tag:"javascript",
+            caption:" A short description",
+            image:'/image/speaker.png',
+            title: 'Text Speaker',
+            description: 'JS' ,
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/Text-to-Speech/', icon:  <BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/Text-to-Speech', icon: <FaGithub /> },
+                ]
+        },
+        {
+            id:uuidv4(),
+            tag:"javascript",
+            caption:" A short description",
+            image:'image/dice-game.jpg',
+            title: 'Dice Game',
+            description: 'JS' ,
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/dice-game/', icon:  <BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/dice-game.git', icon: <FaGithub /> },
+                ]
+        },
+        {
+            id:uuidv4(),
+            tag:"javascript",
+            caption:" A short description",
+            image:'image/memory.png',
+            title: 'Memory Game',
+            description: "JS",
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/memory-game/', icon:  <BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/memory-game', icon: <FaGithub /> },
+                ]
+        },
+        {
+            id:uuidv4(),
+            tag:"api",
+            caption:" A short description",
+            image:'image/blog.png',
+            title: 'Blog',
+            description:'Rest-api - [ ejs - mongodb ]',
+                links: [
+                    { id:uuidv4(),link:'https://frozen-mesa-31601.herokuapp.com/', icon:  <BiGlobe />}
+                ]
+        },
+        {
+            id:uuidv4(),
+            tag:"api",
+            caption:" A short description",
+            image:'image/animazon.png',
+            title: 'Animazon',
+            description:"GrapghQL - [ MERN - React - Apollo ]",
+                links: [
+                { id:uuidv4(),link: 'https://animazon-client.herokuapp.com/', icon:  <BiGlobe />},
+                {id:uuidv4(),link:'https://github.com/capo33/animazon-client', icon: <FaGithub /> },
+                ]
+        },
+        {
+            id:uuidv4(),
+            tag:"api",
+            caption:" A short description",
+            image:'image/morty.png',
+            title: 'Morty Characters',
+            description:"GrapghQL - [ React - Apollo ]",
+                links: [
+                { id:uuidv4(),link: 'https://morty-characters.herokuapp.com/', icon: <BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/Morty-Characters', icon: <FaGithub /> },
+                ]
+        },
+        {
+            id:uuidv4(),
+            tag:"api",
+            caption:" A short description",
+            image:'image/16.png',
+            title: 'SpaceX',
+            description:"GrapghQL - [ React - Apollo ]",
+                links: [
+                { id:uuidv4(),link: 'https://boiling-forest-08686.herokuapp.com/', icon:  <BiGlobe />},
+                ]
+        },
+        {
+            id:uuidv4(),
+            tag:"school",
+            caption:" A short description",
+            image:'image/school-projects.jpg',
+            title: 'School Projects',
+            description:'Html - Css - Angular',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/school-projects/', icon:  <BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/school-projects.git', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"experimental",
+            caption:" A short description",
+            image:'image/splitting.jpg',
+            title: 'Angular Project',
+            description:"Split server",
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/spliting/', icon:<BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/spliting.git', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"experimental",
+            caption:" A short description",
+            image:'image/joke-list2.jpg',
+            title: 'Angular Project',
+            description:'Jokes',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/joke-list/', icon:<BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/joke-list.git', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"experimental",
+            caption:" A short description",
+            image:'image/warning-et-success.jpg',
+            title: 'Angular Project',
+            description:'Success and warning',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/warning-et-success/', icon:<BiGlobe />},
+                { id:uuidv4(),link:'https://github.com/capo33/warning-et-success.git', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"experimental",
+            caption:" A short description",
+            image:'image/crazy-button.jpg',
+            title: 'JavaScript Project',
+            description:'Crazy Buttons.',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/crazy-button/', icon:<BiGlobe /> },
+                { id:uuidv4(),link:'https://github.com/capo33/crazy-button.git', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"experimental",
+            caption:" A short description",
+            image:'image/egyption-gods.jpg',
+            title: 'React Project',
+            description:'Egyption Deities',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/egyption-gods/', icon:<BiGlobe /> },
+                { id:uuidv4(),link:'https://github.com/capo33/egyption-gods.git', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"experimental",
+            caption:" A short description",
+            image:'image/emojipedia.jpg',
+            title: 'React Project',
+            description:'Emojipedia',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/emojipedia/', icon:<BiGlobe /> },
+                { id:uuidv4(),link:'https://github.com/capo33/emojipedia.git', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"experimental",
+            caption:" A short description",
+            image:'image/Digital-Marketing.jpg',
+            title: 'Css Project',
+            description:'Digital Marketing',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/Digital-Marketing/', icon:<BiGlobe /> },
+                { id:uuidv4(),link:'https://github.com/capo33/Digital-Marketing.git', icon:  <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"experimental",
+            caption:" A short description",
+            image:'image/tindog.jpg',
+            title: 'Css Project',
+            description:'Tindog',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/tindog/', icon:<BiGlobe /> },
+                { id:uuidv4(),link:'https://github.com/capo33/tindog.git', icon: <FaGithub /> },
+            ]
+        },
+        {
+            id:uuidv4(),
+            tag:"experimental",
+            caption:" A short description",
+            image:'image/travel-agency.jpg',
+            title: 'Css Project',
+            description:'Travel Agency',
+                links: [
+                { id:uuidv4(),link:'https://capo33.github.io/travel-agency/', icon:<BiGlobe /> },
+                { id:uuidv4(),link:'https://github.com/capo33/travel-agency.git', icon: <FaGithub /> },
+            ]
+        },
+    ]

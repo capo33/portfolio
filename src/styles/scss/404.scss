@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
 $light-grey: #e0e2f4;
-$grey: #aaaaaa;
+$yellow: #FFD369;
 $blue: #0414a7;
+$red: rgb(224, 2, 2);
 
 $base-font-size: 20px;
 $font-stack1: 'Electrolize', sans-serif;;
@@ -23,7 +24,9 @@ $font-stack: 'VT323', monospace;
 }
  
 .erroPage { 
+    height: 92vh;
     padding-top: 10%; 
+    background-color: #222831;
 
     .main_container {
         width: 90%;
@@ -43,32 +46,39 @@ $font-stack: 'VT323', monospace;
         .title {
             margin-bottom: 50px; 
             text-align: center;
-            color: $blue; 
+            color: $red; 
             
             @media screen and (max-width:768px) {
                 font-size: 2rem;
             }
       
             .bg {
-              background: $grey;
+              background: $yellow;
+              border-radius: 5px;
               padding: 0 15px 2px 13px;  
             }
             
-            .nav {
-                margin-top: 35px;
-                text-align: center;
+        }
+        .nav{
+            background-color: inherit;
+            margin-top: 10%;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
 
-                
+            @media screen and (max-width:425px){
+                margin-top: 20%;
+                flex-wrap: wrap;
+                grid-template-columns:  1fr;
             }
         }
 
         .link-item {
-            display: inline-block;
-            padding: .8em 1em;
-            margin-right: 1em;
-            margin-bottom: 1em;
-            border: 3px solid #B9DDFB;
-            color: #138FF2;
+            display: flex;
+            padding: .5em 1em;
+            border: 3px solid #FFD369;
+            color: #EEEEEE;
             font-weight: 500;
             text-transform: uppercase;
             text-decoration: none;
@@ -79,17 +89,19 @@ $font-stack: 'VT323', monospace;
             
             @media screen and (max-width:768px) {
                 padding: .5em .7em;
+                display: block;
+                flex-wrap: wrap;
                 font-size: 1rem;
             }
             &:hover {
-                color: #E3F2FD;
+                color: #222831;
                 &:before {
                     top: 0;
                 }
             }
             &:before {
                 content: '';
-                background: #138FF2;
+                background: #FFD369;
                 height: 100%;
                 width: 100%;
                 position: absolute;

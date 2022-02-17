@@ -17,7 +17,7 @@ function Error() {
                 <h1 className=" title"><span className="bg">Error - 404</span></h1>
                 <h1>Hmm..</h1>
                 <h2 className="h-tag">It seems that an error has occurred</h2>
-                <p>Don't worry though, everything is STILL AWESOME!</p>
+                <p>Don't worry though, everything is still AWESOME!</p>
                 <p>Let me guide you back!</p>
                 <nav className="nav">
                 <Link className="link-item" onClick={dothing} to="*">&#8594; back</Link>

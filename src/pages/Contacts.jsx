@@ -33,7 +33,8 @@ function Contacts() {
       }
     return (
       <>
-          <div className="contact3 py-5">
+          <div className="contact ">
+          <div className="">
             <div className="row no-gutters">
               <div className="container">
                 <div className="row">
@@ -44,11 +45,11 @@ function Contacts() {
                   </div>
                   <div className="col-lg-6">
                     <div className="contact-box ml-3">
-                      <h1 className="font-weight-light mt-2 text-white">Contact</h1>
-                      <form className="mt-4" onSubmit={SendEmail}>
+                      <h1 className="section_title_text">Contact</h1>
+                      <form className="" onSubmit={SendEmail}>
                         <div className="row">
                           <div className="col-lg-12">
-                            <div className="form-group mt-2">
+                            <div className="form-group">
                               <input type="text" className="form-control" name="name" id="name"  required placeholder="name"/>
                             </div>
                           </div>
@@ -63,7 +64,7 @@ function Contacts() {
                             </div>
                           </div>
                           <div className="col-lg-12">
-                          <button type="submit" className="btn btn-danger-gradiant mt-3 text-white border-0 px-3 py-2">Send message</button>
+                          <button type="submit" className="btn text-dark btn-danger-gradiant  text-white border-0 ">Send message</button>
                           </div>
                         </div>
                       </form>
@@ -72,13 +73,13 @@ function Contacts() {
                   <div className="col-lg-6">
                       <div className=" mt-5 mb-4">
                           <div className="row">
-                              <div className="card-body d-flex align-items-center c-detail ">
-                                  <div className="mr-2 mr-2 mt-2 align-self-center">
+                              <div className="card-body d-flex align-items-center ">
+                                  <div className="mr-2 mr-2 mt-2">
                                       <Email />
                                   </div>
                                   <div>
-                                      <h6 className="font-weight-medium text-white">E-Mail</h6>
-                                      <p className="text-white">{ResumeData.email}</p>
+                                      <h6 className="">E-Mail</h6>
+                                      <p className="">{ResumeData.email}</p>
                                   </div>
                               </div>
                               <div className="card-body d-flex align-items-center c-detail ">
@@ -86,17 +87,17 @@ function Contacts() {
                                       <Phone />
                                   </div>
                                   <div>
-                                      <h6 className="font-weight-medium text-white">Phone</h6>
-                                      <p className="text-white">{ResumeData.phone}</p>
+                                      <h6 className="">Phone</h6>
+                                      <p className="">{ResumeData.phone}</p>
                                   </div>
                               </div>
-                              <div className="card-body d-flex align-items-center c-detail ">
+                              <div className="card-body d-flex align-items-center">
                                   <div className="mr-2 mr-2 mt-2 align-self-center">
                                       <Place />
                                   </div>
                                   <div>
-                                      <h6  className="text-white">Address</h6>
-                                      <p className="text-white">{ResumeData.adresss}</p>
+                                      <h6  className="">Address</h6>
+                                      <p className="">{ResumeData.adresss}</p>
                                   </div>
                               </div>
                           </div>
@@ -125,6 +126,7 @@ function Contacts() {
                 </div>
               </div>
             </div>
+          </div>
           </div>
           </>
     )

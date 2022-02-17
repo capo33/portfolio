@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/scss/about.scss'
-import '../../src/styles/scss/aboutIcons.scss'
 
 function WExperience(props) {
     return (
@@ -11,7 +10,7 @@ function WExperience(props) {
                 </div>
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                    <h4 className="timeline-title">{props.what}</h4>
+                    <h5 className="timeline-title">{props.what}</h5>
                     <p>{props.where}</p>
                 </div>
             </li>

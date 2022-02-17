@@ -1,68 +1,97 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { AiOutlineArrowRight } from "react-icons/ai"
-import Capo from '../assets/images/capocrop.jpg'
+import React, { useRef }  from 'react'
 import Particles from 'react-particles-js';
+import { Link } from 'react-router-dom'
+import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
+
+import About from '../pages/About'
+import {ScrollDown, ScrollLink} from '../components/HeroElement'
+
+import code from '../assets/images/179.svg'
 import '../styles/css/heropage.css'
+ 
 
 function Home() {
+
+    const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)   
+
+    const myRef = useRef(null)
+   const executeScroll = () => scrollToRef(myRef)
+
+    // const titleRef = useRef()
+ 
+    // function handleBackClick() {
+    //     titleRef.current.scrollIntoView({ behavior: 'smooth' })
+    // }
+
     return (
-        <div className="bp">
-         <Particles
-            params={{
-                "particles": {
-                    "number": {
-                        "value": 50
-                    },
-                    "size": {
-                        "value": 3
-                    }
-                },
-                "interactivity": {
-                    "events": {
-                        "onhover": {
-                            "enable": true,
-                            "mode": "repulse"
-                        }
-                    }
-                }
-            }}
-        />
-        <section className="page-section clearfix">
-            <div className="container">
-                <div className="intro">
-                    <img className="intro-img img-fluid mb-3 mb-lg-1 rounded" src={Capo} alt="Capo" />
-                    <div className="intro-text text-center bg-faded p-5 rounded">
-                        <h2 className="section-heading">
-                            <span className="section-heading-upper">Hello 🖐</span>
-                            <span className="section-heading-lower"> I'M Mohamed</span>
-                        </h2>
-                        <p className=" mb-3 p__info">Fainal Stage Wep Development Student </p>
-                         
-                    </div>
+          
+ <div className="main">
+       <div>
+             <Particles
+             params={{
+                 "particles": {
+                     "number": {
+                         "value": 50
+                     },
+                     "size": {
+                         "value": 3
+            
+                     },              
+                 },
+                 "interactivity": {
+                     "events": {
+                         "onhover": {
+                             "enable": true,
+                             "mode": "repulse"
+                         }
+                     }
+                 }
+             }}
+         />
+         </div>
+ <section className="header-bg align-items-center d-flex"   >
+    <div className="container">
+        <div className="row align-items-center mb-5">
+            <div className="col-md-6">
+                <div className="header-title">
+                    <p className=" text-uppercase header-small-title title ">Hello!<span className="wave" role="img" aria-labelledby="wave"> 👋🏻 </span></p>
+                    <h1 className="font-weight-bold main-title mb-4">Welcome to my portfolio</h1>
+                     <Link to="/projects" className="btn btn-lg btn-outline-info text-white">
+                         Explore 
+                         <HiOutlineArrowNarrowRight className="ml-2"/>
+                     </Link>
                 </div>
             </div>
-        </section>
-        <section className="page-section cta">
-         <div className="container">
-             <div className="row">
-                 <div className="col-xl-9 mx-auto">
-                     <div className="cta-inner bg-faded rounded1">
-                         <h2 className="section-heading">
-                            <span className="section-heading-lower">Portfolio</span>
-                         </h2>
-                         <p className="">This portfolio has been built using React ❤</p>
-                         <p className="">I have used all my development skills as a student  to create it and design it </p>
-                         <p className=" ">Styles i have used (pure css, sass, styled component, reactstrap and material-ui)</p>
-                         <div >
-                        <Link className=" btn btn-info btn-lg mt-2" to="/projects">Explore My Projects <AiOutlineArrowRight /></Link>
-                         </div>
-                     </div>
-                 </div>
-             </div>
+            <div className="col-md-6">
+                <div>
+                    <img src={code} alt="code" className="image" />
+                </div>
+            </div>
+            <div className="col-lg-12 mt-3 mb-3  " >
+<div>
+         {/* <button onClick={executeScroll}> Click to scroll </button>  */}
+
+ <ScrollDown  onClick={executeScroll}>
+          <ScrollLink >
+          Scroll down
+          <img
+          src="https://raw.githubusercontent.com/gurupawar/website/main/src/Assets/scroll-down.svg"
+          alt="scroll-down"
+          />
+          </ScrollLink>
+        </ScrollDown>
+</div>
+            </div>
          </div>
-     </section>
+     
     </div>
+</section>
+
+<span to="/#" ref={myRef}>
+        <About />
+</span>
+ 
+</div>
     )
 }
 

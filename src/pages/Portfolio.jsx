@@ -1,109 +1,89 @@
-import React, {useEffect, useState} from 'react'
-import { angularProject, reactProject, javaScriptProject, databaseProject, experimentalProject, schoolProject } from '../components/data/Projects';
-import PortfolioList from '../components/PortfolioList';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, {useState} from 'react'
+import {Grid, Tabs, Tab, Card, CardActionArea, CardMedia, CardContent, Typography, Grow, CardActions } from '@mui/material'
+import { ButtonContent } from 'semantic-ui-react'
+
+import {portfolio} from '../components/data/Projects'
+
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../styles/css/Portfolio.css'
-import '../styles/scss/portfolio.scss'
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+
  
 function Portfolio() {
+    const [tabValue, setTabValue] = useState("All");
+     const checked = {
+        value: true
+    }
 
-    const [selected, setSelected] = useState('all')
-    const [data, setData] = useState([])
-    const list = [
-       
-        {
-            id:'experimental',
-            title:'Experimental'
-        },
-        {
-            id:'school',
-            title:'School'
-        },
-        {
-            id:'react',
-            title:'React'
-        },
-        {
-            id:'angular',
-            title:'angular'
-        },
-        {
-            id:'javaScript',
-            title:'JavaScript'
-        },
-        {
-            id:'Api',
-            title:'Api'
-        },
-    ]
+        return (
+        <div className="projects">           
+        <div className="container ">
+        <Grid container spacing={1}  className="section pb_45 pt_45">
+            <Grid item xs={12} >
 
-    useEffect(() => {
-        switch (selected) {
-            case 'school':
-                setData(schoolProject)
-                 break;
-            case 'react':
-                setData(reactProject)
-                break;
-            case 'javaScript':
-                setData(javaScriptProject)
-                break;
-            case 'angular':
-                setData(angularProject)
-                break;
-            case 'Api':
-                setData(databaseProject)
-                break;
-            case 'exprimental':
-                setData(experimentalProject)
-                break;
-        
-            default:
-                setData(experimentalProject)
-                break;
-        }
-    },[selected])
+                {/* tabs */}
 
-    
-    return (
-               <div className="portfolio-section">
-                    <div className="portfolio">
-                    <h1 className="h-tags">Portfolio</h1>   
-                    <ul className="menu-item">
-                        {list.map((item) => (
-                            <PortfolioList 
-                            title={item.title} 
-                            active={selected === item.id} 
-                            setSelected={setSelected}
-                            id={item.id}
-                            key={item.id}
-                            />
+                <Tabs  
+                variant="scrollable"
+                scrollButtons="auto"
+                aria-label="scrollable auto tabs example" 
+                // backgr="inherit"
+                value={tabValue} 
+                className="customTabs" 
+                onChange={(e, newValue) => setTabValue(newValue)}>
+                    <Tab label="All" value="All" className={tabValue === 'All'? 'customTabs_item active' : 'customTabs_item'} /> 
+                        {[...new Set(portfolio.map(item => item.tag))].map((tag, index) => (
+                            <Tab key={index} label={tag} value={tag} className={tabValue === tag? 'customTabs_item active' : 'customTabs_item'} />
                         ))}
-                    </ul>
-                    <div className=" data-card">
-                        {data.map((d) => {
-                            return (
-                            <div className="cardy" key={d.id}>
-                                      <img src={d.image} alt={d.title} />
-                                     <div className="card-body">
-                                     <h4>{d.title}</h4>
-                                     <p>{d.description}</p>
-                                     <ul>
-                                         <li><a  href={d.github}target="_blank" rel="noreferrer" className="github"><FontAwesomeIcon icon={faGithub} style={{marginRight:'5px'}}/> Github</a></li>
-                                         <li><a  href={d.demo} target="_blank" rel="noreferrer"  className="demo"><FontAwesomeIcon icon={faGlobe} style={{marginRight:'5px'}}/>Demo</a></li>
-                                     </ul>
-                                     </div>
-                                 </div>
+                </Tabs>
+            </Grid>
 
-                            )
-                        })}
+            <Grid item xs={12} >
+                <Grid container spacing={2} >
+                    {portfolio.map((project,index) =>(
+                        <React.Fragment key={project.id}>
+                        {tabValue === project.tag || tabValue === 'All' ? (
+                             <Grid item xs={12} sm={6} md={4} lg={3} >
+                            <Grow in={checked.value} timeout={1000}>
+                            <Card className="customCard" style={{background:'#E8E8E8'}}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image={project.image} 
+                                        title={project.title}
+                                        className="customCard_image" 
+                                        />
+                                        <CardContent>
+                                        <Typography 
+                                        variant="body2"
+                                        className="customCard_title">{project.title}</Typography>
+                                        <Typography variant="body2" className="customCard_caption">{project.description}</Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions className="projectDialog">
+                                        {project?.links?.map((link,index) => (
+                                            <div className="projectDialog_icon" key={index}>
+                                                <ButtonContent className="  ">
+                                                <a href={link.link}  
+                                                className="projectDialog_icon btn btn_link  " target="_blank" rel="noreferrer" >{link.icon}</a>
+                                                </ButtonContent>
+                                            </div>
+                                        ))}
+                                    </CardActions>
+                                    </Card>
+                            </Grow>
+                        </Grid>
+                        ) : null}
                        
-                    </div>
-                </div>
-               </div>
+                        </React.Fragment>
+                        
+                    ))}
+                </Grid>
+            </Grid>
+               
+        </Grid>
+        </div>
+        </div>
     )
 }
 

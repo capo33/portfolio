@@ -1,0 +1,27 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 0 auto;
+}
+.blurred-bg {
+    margin-top: 2% ;
+   text-align: center;
+   background-color: #393e46;
+  /* background-image: linear-gradient(0deg, #393e46, #393e46,#020024); */
+   color: #eeeeee;
+  font-size: 1.1rem;
+  padding: 20px 10% ;
+  text-align: start;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
+@media (max-width: 768px) {
+  .blurred-bg{
+       font-size: 1rem;
+  }
+}
+ 

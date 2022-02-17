@@ -1,35 +1,31 @@
 import { FaReact, FaPython } from "react-icons/fa"
-import { SiRedux } from "react-icons/si"
+ import { SiRedux } from "react-icons/si"
 
 export const AboutData = [
     {
         id:1,
-        title:"My name is Mohamed, Egyptian, Finnish citizen since 2016. Currently I am a web development student @Business College Helsinki in an encoder training Angular and .Net.", 
+        title:"🙄 Thinking about my future and generally finding my own path in life takes a while. But after deep thinking, I found my way into programming.", 
     },
     {
         id:2,
-        title:"I would say that I have become very passionate about programming and creating web applications as well as creating games.", 
+        title:"💾 I'm now a final stage web-development student with 1.5 years of experience and good knowledge of programming. I'm highly motivated to continue learning and improving my craft.", 
     },
     {
         id:3,
-        title:"I started programming a year ago and really enjoyed every moment of it.",
+        title:"😊 I chose web development to be able to create things that can be useful to others.", 
     },
     {
         id:4,
-        title:"I am studying web development to be able to create things that can be useful to others.", 
+        title:"💪 Since I started programming, I feel like everything is getting better than ever and I have really enjoyed every moment of this journey.", 
     },
     {
         id:5,
-        title:"As for coding, I feel that everything is getting better than ever.", 
-    },
-    {
-        id:6,
-        title:"Now I am moving forward on [ React  " ,
+        title:"⚡ Now I'm moving forward on [ React  " ,
         icon:<FaReact />,
-        title1:" - Redux  " ,
+        title1:" - Redux Toolkit " ,
         icon1:<SiRedux />,
-        title2:" ]  and I've also started my first class in [ - Python " ,
+        title2:" ], I'm also going to start my first class in [ - Python " ,
         icon2:<FaPython />,
-        title3:" ]"
+        title3:" ]."
     },
 ]
