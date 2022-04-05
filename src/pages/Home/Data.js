@@ -1,0 +1,32 @@
+export const homeObj = {
+  primary: false,
+  fColor: true,
+  lightBg: false,
+  lightTopLine: false,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "Coder ",
+  headline: "MERN-Stack :)",
+  description:
+    "I'm Mohamedx. I'm a final stage web development student, preparing myself to be a full-stack developer. I love the MERN-Stack concept. I'm very passionate and dedicated to my work. I enjoy every step of the coding process. With two years of experience as a web developer student, I have acquired the skills and knowledge needed to be able to make any project a success.",
+  buttonLabel: "Let's Talk",
+  imgStart: "start",
+  img: require("../../assets/images/undraw_percentages_re_a1ao.svg").default,
+  alt: "home",
+  start: "true",
+};
+export const homeTwo = {
+  primary: true,
+  lightBg: true,
+  lightTopLine: true,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "Hello! 👋🏻",
+  headline: "Welcome to my portfolio",
+  description: "",
+  buttonLabel: "Explore",
+  imgStart: "",
+  img: require("../../assets/images/179.svg").default,
+  alt: "home",
+  start: "true",
+};

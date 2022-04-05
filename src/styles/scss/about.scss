@@ -1,126 +1,125 @@
-$primary-color: #686D76;
+$primary-color: #686d76;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Montserrat:wght@600&family=Open+Sans&family=Supermercado+One&display=swap');
-$font-stack: 'Montserrat', sans-serif;
-
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Montserrat:wght@600&family=Open+Sans&family=Supermercado+One&display=swap");
+$font-stack: "Montserrat", sans-serif;
 
 /*==================================
     TIMELINE
 ==================================*/
 
 .timeline {
-    
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-family: $font-stack;
-    width: 100%;
-    color: #222831;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+  width: 100%;
+  color: #000;
 
-    /*----- TIMELINE ITEM -----*/
-    .timeline-item {
-        padding-left: 40px;
-        position: relative;
-        &:last-child {
-            padding-bottom: 0;
-        }
+  /*----- TIMELINE ITEM -----*/
+  .timeline-item {
+    padding-left: 40px;
+    position: relative;
+    &:last-child {
+      padding-bottom: 0;
+    }
 
-        /*----- TIMELINE INFO -----*/
-        .timeline-info {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 3px;
-            margin: 0 0 .5em 0;
-            text-transform: uppercase;
-            white-space: nowrap;
-            
-        }
+    /*----- TIMELINE INFO -----*/
+    .timeline-info {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin: 0 0 0.5em 0;
+      text-transform: uppercase;
+      white-space: nowrap;
     }
-    
-    /*----- TIMELINE CONTENT -----*/
-    .timeline-content {
-        padding-bottom: 30px;
-        p:last-child {
-            margin-bottom: 0;
-        }
+  }
+
+  /*----- TIMELINE CONTENT -----*/
+  .timeline-content {
+    padding-bottom: 30px;
+    p:last-child {
+      margin-bottom: 0;
     }
+  }
 }
 
 /*----- TIMELINE MARKER -----*/
 .timeline-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  &:before {
+    background: #191919;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
     position: absolute;
-    top: 0; bottom: 0; left: 0;
+    top: 4px;
+    left: 0;
     width: 15px;
-    &:before {
-        background: $primary-color;
-        border: 3px solid transparent;
-        border-radius: 100%;
-        content: "";
-        display: block;
-        height: 15px;
-        position: absolute;
-        top: 4px; left: 0;
-        width: 15px;
-        transition: background 0.3s ease-in-out,
-                    border 0.3s ease-in-out;
-    }
-    &:after {
-        content: "";
-        width: 3px;
-        background: #CCD5DB;
-        display: block;
-        position: absolute;
-        top: 24px; bottom: 0; left: 6px;
-    }
-    .timeline-item:last-child &:after {
-        content: none;
-    }
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  &:after {
+    content: "";
+    width: 3px;
+    background: #191919;
+    display: block;
+    position: absolute;
+    top: 24px;
+    bottom: 0;
+    left: 6px;
+  }
+  .timeline-item:last-child &:after {
+    content: none;
+  }
 }
 .timeline-item:hover .timeline-marker:before {
-    background: transparent;
-    border: 3px solid $primary-color;
+  background: transparent;
+  border: 3px solid #ffd523;
 }
 
-    
 /***** icons section ******/
 
-h3,h5{
-    font-family: $font-stack;
-
+h3,
+h5 {
+  font-family: $font-stack;
 }
 
-.icon-box{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.icon-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  padding-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icons {
+    border: 1px solid #201f1f17;
     border-radius: 5px;
-    
-    @media screen and (max-width:768px){
-        flex-wrap: wrap;
-        justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    // transition: transform 0.5s ease-in-out;
+    opacity: 1;
+    max-width: 100%;
+    background-color: rgba(201, 193, 193, 0.1);
+
+    &:hover {
+      box-shadow: 0px 5px 10px;
+      // transform: translateY(1px);
     }
-    
-    
-    .icons{
-        border: 1px solid #201f1f17;
-        border-radius: 10px;
-        text-align: center;
-        align-content: center;
-        padding: 1.5rem;
-        margin: .5rem;
-        width: 100px;
-        height: 100px;
-        cursor: pointer;
-        transition: transform .5s ease-in-out;
-        opacity: 1;
-        max-width: 100%;
-        background-color: rgba(201, 193, 193, 0.1);
- 
-        &:hover{
-            box-shadow: 0px 5px 10px ;
-            transform:translateY(2px);
-             
-        }
-    }
+  }
 }

@@ -1,73 +1,332 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 /* ------------- Particles --------------- */
-.tsparticles-canvas-el{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: 0;
+.tsparticles-canvas-el {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
 }
 
- .image:hover{
-     opacity: .7;
-     transition: all 0.5s ease-in-out;
- }
-.main{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #222831;
-    padding: 7% 0 0;
-    font-family: 'Montserrat', sans-serif; 
-
+.main {
+  background-color: #191919;
+  padding: 5% 0 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-   
-.main-title{
-    color: var(--white);
+.header-title p {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
-  
+.header-title h1 {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.main-title {
+  color: var(--white);
+}
+
 .header-bg .header-small-title {
-    letter-spacing: 2px;
-    font-family: 'Montserrat', sans-serif; 
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
 }
-   
-  @media (max-width: 425px) {
-    .header-bg .main-title {
-      font-size: 2rem;
-    }
-    .header-title{
-        font-size: 1.5rem;
-         text-align: center;
-    }
-   }
-  @media (max-width: 768px) {
-    .header-bg .main-title {
-      font-size: 1.7rem;
-    }
-    .header-title{
-        font-size: 1.2rem;
-         text-align: center;
-    }
-   }
 
-   .wave {
-       animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-       animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-    display: inline-block;
+@media (max-width: 425px) {
+  .header-title {
+    font-size: 2rem;
   }
-  
-  @keyframes wave-animation {
-      0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-     20% { transform: rotate(-8.0deg) }
-     30% { transform: rotate(14.0deg) }
-     40% { transform: rotate(-4.0deg) }
-     50% { transform: rotate(10.0deg) }
-     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-    100% { transform: rotate( 0.0deg) }
+  .header-title h1 {
+    padding-top: 15%;
+  }
+  .header-title .btn {
+    margin-top: 15%;
   }
 
-  
+  .main {
+    padding: 25% 0 0;
+  }
+  .image {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header-bg .main-title {
+    font-size: 1.7rem;
+  }
+  .header-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .main {
+    padding: 10% 0 0;
+  }
+  .col-md-6 img{
+    padding: 10% 0 0;
+  }
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.button {
+  color: #191919;
+  background-color: #ffd523;
+  border-radius: 5px;
+  padding: 12px 64px;
+  border: 1px solid #ffd523;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #191919;
+  outline: none;
+  border: 1px solid #ffd523;
+  color: #f5f2e7;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    width: 100%;
+  }
+}
+.mouse_scroll {
+  margin: 0 auto;
+  width: 24px;
+  height: 100px;
+  margin-top: 125px;
+  cursor: pointer;
+}
+
+.m_scroll_arrows {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.one {
+  margin-top: 1px;
+}
+
+.one,
+.two,
+.three {
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+}
+
+.one {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-direction: alternate;
+
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.two {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-direction: alternate;
+  animation-delay: 0.2s;
+  animation-direction: alternate;
+  margin-top: -6px;
+}
+
+.three {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-direction: alternate;
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+  height: 4px;
+  width: 4px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+@-o-keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+@keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

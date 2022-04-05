@@ -1,21 +1,39 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
 
-
-.contact{
+.contact {
   background-color: #eeeeee;
   font-family: "Montserrat", sans-serif;
   color: #222831;
-  padding: 5% ;
+  padding: 5%;
 }
 
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
- 
+.submit-button {
+  color: #ffd523;
+  background-color: #191919;
+  border-radius: 5px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #ffd523;
+  outline: none;
+  color: #191919;
+}
+
 .contact .btn-danger-gradiant {
-  background: #FFD369;
+  background: #ffd369;
 }
 .contact .btn-danger-gradiant:hover {
   background: #e4bc5f;
-  color: #FFD369;
+  color: #ffd369;
 }
