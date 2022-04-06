@@ -5,6 +5,10 @@ export const InfoSec = styled.div`
   padding: 160px 0;
   /* background: ${({ lightBg }) => (lightBg ? "#fff" : "#101522")}; */
   background: ${({ lightBg }) => (lightBg ? "#191919" : "#F7F7F7")};
+
+  @media screen and (max-width: 425px) {
+    padding: 50% 0;
+  }
 `;
 
 export const Container = styled.div`
@@ -133,6 +137,7 @@ export const Heading = styled.h1`
 `;
 
 export const Arrow = styled.div`
+padding: 0 50% ;
   display: flex;
   justify-content: center;
   align-items: center;
