@@ -8,7 +8,7 @@ export const homeObj = {
   topLine: "Coder ",
   headline: "MERN-Stack :)",
   description:
-    "I'm Mohamedx. I'm a final stage web development student, preparing myself to be a full-stack developer. I love the MERN-Stack concept. I'm very passionate and dedicated to my work. I enjoy every step of the coding process. With two years of experience as a web developer student, I have acquired the skills and knowledge needed to be able to make any project a success.",
+    "I'm a final stage web development student, preparing myself to be a full-stack developer. I love the MERN-Stack concept. I am very passionate and dedicated to programming. I enjoy every step of the coding process. With two years of experience as a web developer student, I have acquired the skills and knowledge needed to be able to make any project a success.",
   buttonLabel: "Let's Talk",
   imgStart: "start",
   img: require("../../assets/images/undraw_percentages_re_a1ao.svg").default,
@@ -17,12 +17,13 @@ export const homeObj = {
 };
 export const homeTwo = {
   primary: true,
+  fColor: false,
   lightBg: true,
   lightTopLine: true,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Hello! 👋🏻",
-  headline: "Welcome to my portfolio",
+  topLine: "Hello!",
+  headline: "I'm Mohamed",
   description: "",
   buttonLabel: "Explore",
   imgStart: "",

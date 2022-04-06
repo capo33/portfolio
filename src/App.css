@@ -84,3 +84,8 @@ a{
 .pt_45{
   padding-top: 45px;
 }
+.tsparticles-canvas-el {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
