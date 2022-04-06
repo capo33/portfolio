@@ -5,10 +5,6 @@ export const InfoSec = styled.div`
   padding: 160px 0;
   /* background: ${({ lightBg }) => (lightBg ? "#fff" : "#101522")}; */
   background: ${({ lightBg }) => (lightBg ? "#191919" : "#F7F7F7")};
-
-  @media screen and (max-width: 425px) {
-    padding: 120px;
-  }
 `;
 
 export const Container = styled.div`
@@ -46,7 +42,7 @@ export const InfoColumn = styled.div`
   padding-left: 15px;
   flex: 1;
   max-width: 50%;
-  /* flex-basis: 60%; */
+  flex-basis: 60%;
   @media screen and (max-width: 768px) {
     max-width: 100%;
     flex-basis: 100%;
@@ -75,7 +71,6 @@ export const TopLine = styled.div`
   line-height: 16px;
   letter-spacing: 1.4px;
   margin-bottom: 16px;
-
 `;
 
 export const Span = styled.span`
@@ -133,7 +128,8 @@ export const Heading = styled.h1`
   color: ${({ lightText }) => (lightText ? "#F5F2E7" : "#2C3333")};
 
   @media screen and (max-width: 425px) {
-   }
+    font-size: 2.5rem;
+  }
 `;
 
 export const Arrow = styled.div`
@@ -144,7 +140,6 @@ export const Arrow = styled.div`
   color: white;
   width: 40px;
   height: 40px;
-  
 `;
 export const Bounce = styled.span`
   -moz-animation: bounce 2s infinite;
