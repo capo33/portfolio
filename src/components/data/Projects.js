@@ -268,7 +268,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "javascript",
+    tag: "Javascript",
     caption: " A short description",
     image: "/image/speaker.png",
     title: "Text Speaker",
@@ -288,7 +288,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "javascript",
+    tag: "Javascript",
     caption: " A short description",
     image: "image/dice-game.jpg",
     title: "Dice Game",
@@ -308,7 +308,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "javascript",
+    tag: "Javascript",
     caption: " A short description",
     image: "image/memory.png",
     title: "Memory Game",
@@ -329,7 +329,7 @@ export const portfolio = [
 
   {
     id: uuidv4(),
-    tag: "school",
+    tag: "School",
     caption: " A short description",
     image: "image/school-projects.jpg",
     title: "School Projects",
@@ -349,7 +349,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "school",
+    tag: "School",
     caption: " A short description",
     image: "image/blitz.png",
     title: "School Projects",
@@ -369,7 +369,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "experimental",
+    tag: "Experimental",
     caption: " A short description",
     image: "image/splitting.jpg",
     title: "Angular Project",
@@ -389,7 +389,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "experimental",
+    tag: "Experimental",
     caption: " A short description",
     image: "image/joke-list2.jpg",
     title: "Angular Project",
@@ -409,7 +409,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "experimental",
+    tag: "Experimental",
     caption: " A short description",
     image: "image/warning-et-success.jpg",
     title: "Angular Project",
@@ -429,7 +429,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "experimental",
+    tag: "Experimental",
     caption: " A short description",
     image: "image/crazy-button.jpg",
     title: "JavaScript Project",
@@ -449,7 +449,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "experimental",
+    tag: "Experimental",
     caption: " A short description",
     image: "image/egyption-gods.jpg",
     title: "React Project",
@@ -469,7 +469,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "experimental",
+    tag: "Experimental",
     caption: " A short description",
     image: "image/emojipedia.jpg",
     title: "React Project",
@@ -489,7 +489,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "experimental",
+    tag: "Experimental",
     caption: " A short description",
     image: "image/Digital-Marketing.jpg",
     title: "Css Project",
@@ -509,7 +509,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "experimental",
+    tag: "Experimental",
     caption: " A short description",
     image: "image/tindog.jpg",
     title: "Css Project",
@@ -529,7 +529,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "experimental",
+    tag: "Experimental",
     caption: " A short description",
     image: "image/travel-agency.jpg",
     title: "Css Project",
