@@ -41,7 +41,7 @@ function Hero({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Link to="/contact">
+                <Link to='/contact'>
                   <Button big fontBig primary={primary} fColor={fColor}>
                     {buttonLabel} <RiMessage2Line />
                   </Button>

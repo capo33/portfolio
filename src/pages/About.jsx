@@ -29,7 +29,6 @@ const Main = styled.main`
   @media screen and (max-width: 768px) {
   }
   .p_link {
-    font-size: 1rem;
     line-height: 2rem;
   }
   @media screen and (max-width: 768px), (max-width: 1024px) {
@@ -62,6 +61,8 @@ export default function About() {
                   <p key={item.id} className="p_link">
                     {item.title}
                     {item.icon}
+                    {item.title4}
+                    {item.icon4}
                     {item.title1}
                     {item.icon1}
                     {item.title2}

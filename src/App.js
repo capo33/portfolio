@@ -13,7 +13,7 @@ import Footer from "./pages/Footer";
 
 function App() {
   return (
-    <div >
+    <div  >
       <BrowserRouter>     
       <ScrollToTop />
       <Navigation />

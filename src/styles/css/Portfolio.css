@@ -1,70 +1,71 @@
- 
-.projects{
-    background-color: #eeeeee;
-    height: 100%;
-}
-
-
-.customTabs .active{
-    color: #393E46;
-    
-}
-.customTabs .customTabs_item{
+.projects {
+    background-color: #fff;
+  }
+  .customTabs {
+    color: yellow;
+  }
+  
+  .customTabs .active {
+    color: #393e46;
+  }
+  .customTabs .customTabs_item {
     font-size: 1.1rem;
+    color: #393e46;
     padding: 0;
     min-width: 0;
     margin-right: 20px;
     text-transform: inherit;
-    font-weight: 400;
-    outline-width: 0 ;
-}
-.customCard{
+    outline-width: 0;
+    outline-style: none;
+  }
+  .customCard {
     height: 100%;
     max-width: 350px;
     box-shadow: 0 0 48px 10px rgba(4, 6, 4, 0.08);
     border-radius: 5px;
     overflow: hidden;
     outline-width: 0;
-}
-
-.customCard .customCard_image{
-    height: 140px;
-}
-
-.customCard .customCard_title{
-    
+  }
+  
+  .customCard .customCard_image {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    /* object-position: center center; */
+  }
+  
+  .customCard .customCard_title {
     font-weight: 500;
-}
-
-.customCard_caption{
+  }
+  
+  .customCard_caption {
     color: gray;
     font-weight: 400;
-    
-}
-
-.projectDialog{
+  }
+  
+  .projectDialog {
     display: flex;
     align-items: center;
     justify-content: center;
- }
-
-.projectDialog .projectDialog_image{
+  }
+  
+  .projectDialog .projectDialog_image {
     max-height: 300px;
     width: 100%;
     object-fit: cover;
     object-position: center center;
-}
-
-.projectDialog .projectDialog_description{
+  }
+  
+  .projectDialog .projectDialog_description {
     margin-top: 10px;
-}
-
-.projectDialog .projectDialog_actions{
+  }
+  
+  .projectDialog .projectDialog_actions {
     justify-content: center;
     margin-bottom: 10px;
-}
-
-.projectDialog .projectDialog_icon{
+  }
+  
+  .projectDialog .projectDialog_icon {
     display: flex;
     font-size: 15px;
     cursor: pointer;
@@ -72,22 +73,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #393E46;
-    color: #eeeeee;
-}
-
-.projectDialog .projectDialog_icon:hover{
+    color: #fff;
+  }
+  
+  .projectDialog .projectDialog_icon:hover {
     text-decoration: none;
-}
-
-
-.btn_link {
+  }
+  
+  .btn_link {
     text-decoration: none;
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100px;
-    background-color:#393E46;   
+    background-color: #393e46;
     /* background-color:#FFD369; */
     max-width: 100%;
-}
+  }
+  

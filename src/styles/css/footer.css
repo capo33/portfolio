@@ -1,10 +1,40 @@
-.footer {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 3%;
-  align-content: center;
+footer {
   background-color: #191919;
-  color: #dfdfde;
-  font-size: 1rem;
+  height: auto;
+  width: 100vw;
+  padding: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.styles {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.heart {
+  padding-left: 10px;
+  animation: beat 0.25s infinite alternate;
+  transform-origin: center;
+  display: inlline;
+}
+
+/* Heart beat animation */
+@keyframes beat {
+  to {
+    transform: scale(1.4);
+  }
 }

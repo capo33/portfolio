@@ -5,11 +5,11 @@ import { v4 as uuidv4 } from "uuid";
 export const portfolio = [
   {
     id: uuidv4(),
-    tag: "react",
-    caption: " A short description",
+    tag: "Front-end",
+    caption: "A short description",
     image: "image/data-company.png",
     title: "Data Company",
-    description: "React-hooks",
+    description: "React-hooks - Styled-components",
     links: [
       {
         id: uuidv4(),
@@ -25,11 +25,11 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "react",
-    caption: " A short description",
-    image: "image/emoji.png",
-    title: "Emoji",
-    description: "React-hooks",
+    tag: "Front-end",
+    caption: "A short description",
+    image: "image/country-api.png",
+    title: "Country API",
+    description: "React - Redux - Typescript",
     links: [
       {
         id: uuidv4(),
@@ -38,34 +38,135 @@ export const portfolio = [
       },
       {
         id: uuidv4(),
-        link: "https://github.com/capo33/emojipedia",
+        link: "https://github.com/capo33/data-company",
         icon: <FaGithub />,
       },
     ],
   },
   {
     id: uuidv4(),
-    tag: "react",
-    caption: " A short description",
-    image: "image/finder.png",
-    title: "Recipe Finder",
-    description: "React-hooks",
+    tag: "Front-end",
+    caption: "A short description",
+    image: "image/fakeshop.png",
+    title: "Fake Shop",
+    description: "React - Redux",
     links: [
       {
         id: uuidv4(),
-        link: "https://capo33.github.io/recipe-finder/",
+        link: "https://capo33.github.io/fakeshop/",
         icon: <BiGlobe />,
       },
       {
         id: uuidv4(),
-        link: "https://github.com/capo33/recipe-finder.git",
+        link: "https://github.com/capo33/fakeshop",
         icon: <FaGithub />,
       },
     ],
   },
   {
     id: uuidv4(),
-    tag: "react",
+    tag: "Front-end",
+    caption: "A short description",
+    image: "image/delta.png",
+    title: "Delta Company",
+    description: "React-hooks - Styled-components",
+    links: [
+      {
+        id: uuidv4(),
+        link: "https://react-smooth-scroll.onrender.com/",
+        icon: <BiGlobe />,
+      },
+      {
+        id: uuidv4(),
+        link: "https://github.com/capo33/react-smooth-scroll",
+        icon: <FaGithub />,
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    tag: "Front-end",
+    caption: "A short description",
+    image: "image/ultra.png",
+    title: "Ultra Company",
+    description: "React-hooks - Styled-components",
+    links: [
+      {
+        id: uuidv4(),
+        link: "https://react-styled-components.onrender.com/",
+        icon: <BiGlobe />,
+      },
+      {
+        id: uuidv4(),
+        link: "https://github.com/capo33/react-styled-component",
+        icon: <FaGithub />,
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    tag: "Front-end",
+    caption: "A short description",
+    image: "image/pokemon2.png",
+    title: "Pokemon Evolution",
+    description: "React-hooks Typescript",
+    links: [
+      {
+        id: uuidv4(),
+        link: "https://react-pokemon-ts.onrender.com/",
+        icon: <BiGlobe />,
+      },
+      {
+        id: uuidv4(),
+        link: "https://github.com/capo33/react-pokemon-ts",
+        icon: <FaGithub />,
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    tag: "Mern-stack",
+    caption: " A short description",
+    image: "image/animazon.png",
+    title: "Animazon",
+    description: "React - GrapghQL - Apollo",
+    links: [
+      {
+        id: uuidv4(),
+        link: "https://animazoon-graphql.netlify.app/",
+        icon: <BiGlobe />,
+      },
+      {
+        id: uuidv4(),
+        link: "https://github.com/capo33/animazon-client",
+        icon: <FaGithub />,
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    tag: "Mern-stack",
+    caption: " A short description",
+    image: "image/tour-app.png",
+    title: "Tour App",
+    description: "React - ReduxToolkit - Node - Express - MongoDB",
+    links: [
+      {
+        id: uuidv4(),
+        link: "https://mern-tour-app.netlify.app/",
+        icon: <BiGlobe />,
+      },
+      {
+        id: uuidv4(),
+        link: "https://github.com/capo33/tour-app-client",
+        icon: <FaGithub />,
+      },
+    ],
+  },
+
+  {
+    id: uuidv4(),
+    tag: "Front-end",
     caption: " A short description",
     image: "image/rick-and-morty.png",
     title: "Rick and Morty",
@@ -85,7 +186,7 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "react",
+    tag: "Front-end",
     caption: " A short description",
     image: "image/star-wars.png",
     title: "Star Wars",
@@ -103,29 +204,10 @@ export const portfolio = [
       },
     ],
   },
+
   {
     id: uuidv4(),
-    tag: "react",
-    caption: " A short description",
-    image: "image/pokemon.png",
-    title: "Pokemon Evolution",
-    description: "React-hooks",
-    links: [
-      {
-        id: uuidv4(),
-        link: "https://capo33.github.io/pokemon-evolution/",
-        icon: <BiGlobe />,
-      },
-      {
-        id: uuidv4(),
-        link: "https://github.com/capo33/pokemon-evolution",
-        icon: <FaGithub />,
-      },
-    ],
-  },
-  {
-    id: uuidv4(),
-    tag: "react",
+    tag: "Front-end",
     caption: " A short description",
     image: "image/keeper.png",
     title: "Note Keeper",
@@ -143,29 +225,10 @@ export const portfolio = [
       },
     ],
   },
+
   {
     id: uuidv4(),
-    tag: "react",
-    caption: " A short description",
-    image: "image/grocery.png",
-    title: "Grocery List",
-    description: "React-hooks - [ Local Storage ]",
-    links: [
-      {
-        id: uuidv4(),
-        link: "https://capo33.github.io/Grocery-List/",
-        icon: <BiGlobe />,
-      },
-      {
-        id: uuidv4(),
-        link: "https://github.com/capo33/Grocery-List",
-        icon: <FaGithub />,
-      },
-    ],
-  },
-  {
-    id: uuidv4(),
-    tag: "react",
+    tag: "Front-end",
     caption: " A short description",
     image: "image/todo.png",
     title: "Todo App",
@@ -185,11 +248,11 @@ export const portfolio = [
   },
   {
     id: uuidv4(),
-    tag: "angular",
+    tag: "Front-end",
     caption: " A short description",
     image: "image/kahvila.png",
     title: "Caffee Counter",
-    description: "caffee counter",
+    description: "Angular - Typescript",
     links: [
       {
         id: uuidv4(),
@@ -263,77 +326,23 @@ export const portfolio = [
       },
     ],
   },
+
   {
     id: uuidv4(),
-    tag: "api",
+    tag: "school",
     caption: " A short description",
-    image: "image/recipe-blog.png",
-    title: "Recipe Blog",
-    description: "Rest-api - [ ejs - mongodb ]",
+    image: "image/school-projects.jpg",
+    title: "School Projects",
+    description: "HTML - CSS - Angular - JS",
     links: [
       {
         id: uuidv4(),
-        link: "https://recipe-site-blog.herokuapp.com/",
+        link: "https://capo33.github.io/school-projects/",
         icon: <BiGlobe />,
       },
       {
         id: uuidv4(),
-        link: "https://github.com/capo33/recipe-blog",
-        icon: <FaGithub />,
-      },
-    ],
-  },
-  {
-    id: uuidv4(),
-    tag: "api",
-    caption: " A short description",
-    image: "image/todos-ejs.jpg",
-    title: "Todo List",
-    description: "Rest-api - [ ejs - mongodb ]",
-    links: [
-      {
-        id: uuidv4(),
-        link: "https://todos-ejs.herokuapp.com/",
-        icon: <BiGlobe />,
-      },
-    ],
-  },
-  {
-    id: uuidv4(),
-    tag: "api",
-    caption: " A short description",
-    image: "image/animazon.png",
-    title: "Animazon",
-    description: "GrapghQL - [ MERN - React - Apollo ]",
-    links: [
-      {
-        id: uuidv4(),
-        link: "https://animazon-client.herokuapp.com/",
-        icon: <BiGlobe />,
-      },
-      {
-        id: uuidv4(),
-        link: "https://github.com/capo33/animazon-client",
-        icon: <FaGithub />,
-      },
-    ],
-  },
-  {
-    id: uuidv4(),
-    tag: "api",
-    caption: " A short description",
-    image: "image/morty.png",
-    title: "Morty Characters",
-    description: "GrapghQL - [ React - Apollo ]",
-    links: [
-      {
-        id: uuidv4(),
-        link: "https://morty-characters.herokuapp.com/",
-        icon: <BiGlobe />,
-      },
-      {
-        id: uuidv4(),
-        link: "https://github.com/capo33/Morty-Characters",
+        link: "https://github.com/capo33/school-projects.git",
         icon: <FaGithub />,
       },
     ],
@@ -342,9 +351,9 @@ export const portfolio = [
     id: uuidv4(),
     tag: "school",
     caption: " A short description",
-    image: "image/school-projects.jpg",
+    image: "image/blitz.png",
     title: "School Projects",
-    description: "Html - Css - Angular",
+    description: "HTML - CSS",
     links: [
       {
         id: uuidv4(),
@@ -473,7 +482,7 @@ export const portfolio = [
       },
       {
         id: uuidv4(),
-        link: "https://github.com/capo33/emojipedia.git",
+        link: "https://github.com/capo33/emojipedia",
         icon: <FaGithub />,
       },
     ],

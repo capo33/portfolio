@@ -22,15 +22,15 @@ function Navigation() {
 
   return (
     <>
-      <div className="nav">
-        <div className=" cont  fle  ">
-          <Link to="/" className="logo">
+      <div className='nav'>
+        <div className=' cont  fle  '>
+          <Link to='/' className='logo'>
             Capo
           </Link>
           <ul className={active} onClick={navToggle}>
             {navItems.map(({ id, path, title, cName }) => {
               return (
-                <li className="nav_item" key={id}>
+                <li className='nav_item' key={id}>
                   <Link to={path} className={cName}>
                     {title}
                   </Link>
@@ -38,7 +38,7 @@ function Navigation() {
               );
             })}
           </ul>
-          <div onClick={navToggle} className="nav-icon">
+          <div onClick={navToggle} className='nav-icon'>
             {open ? <FiX /> : <RiMenu3Line />}
           </div>
         </div>

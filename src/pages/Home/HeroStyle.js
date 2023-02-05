@@ -1,16 +1,16 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const InfoSec = styled.div`
   color: #fff;
   padding: 160px 0;
-  /* background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')}; */
-  background: ${({ lightBg }) => (lightBg ? '#2C3333' : '#F7F7F7')};
+  /* background: ${({ lightBg }) => (lightBg ? "#fff" : "#101522")}; */
+  background: ${({ lightBg }) => (lightBg ? "#2C3333" : "#F7F7F7")};
 `;
 
 export const Container = styled.div`
   z-index: 1;
   width: 100%;
-  height:100% ;
+  height: 100%;
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -28,7 +28,7 @@ export const InfoRow = styled.div`
   margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
   align-items: center;
-  flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
+  flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
 `;
 
 export const InfoColumn = styled.div`
@@ -58,16 +58,20 @@ export const TextWrapper = styled.div`
 export const ImgWrapper = styled.div`
   max-width: 555px;
   display: flex;
-  justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
+  justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
 `;
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? '#F5F2E7' : '#2C3333')};
+  color: ${({ lightTopLine }) => (lightTopLine ? "#F5F2E7" : "#2C3333")};
   font-size: 18px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 576px) {
+    font-size: 16px;
+  }
 `;
 
 export const Img = styled.img`
@@ -81,24 +85,31 @@ export const Img = styled.img`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 2.5rem;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? '#F5F2E7' : '#2C3333')};
+  color: ${({ lightText }) => (lightText ? "#F5F2E7" : "#2C3333")};
+  @media screen and (max-width: 576px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  /* max-width: 440px; */
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? '#F5F2E7' : '#2C3333')};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "#F5F2E7" : "#2C3333")};
+
+  @media screen and (max-width: 576px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Button = styled.button`
   border-radius: 4px;
-  /* background: ${({ primary }) => (primary ? '#2666CF' : '#2C3333')}; */
-  background: ${({ primary }) => (primary ? '#ffd523' : '#191919')};
+  /* background: ${({ primary }) => (primary ? "#2666CF" : "#2C3333")}; */
+  background: ${({ primary }) => (primary ? "#ffd523" : "#191919")};
   /* background: ${({ primary }) => (primary ? "#222831" : "#ffd369")}; */
   white-space: nowrap;
   padding: ${({ big }) => (big ? "12px 64px" : "10px")};
@@ -113,9 +124,13 @@ export const Button = styled.button`
     color: ${({ fColor }) => (fColor ? "#191919" : "#ffd523")};
 
     transition: all 0.3s ease-out;
-   }
+  }
 
   @media screen and (max-width: 991px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 18px;
     width: 100%;
   }
 `;

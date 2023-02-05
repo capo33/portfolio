@@ -6,7 +6,7 @@ import MainHero from "./MainHero";
 function HomePage() {
   return (
     <>
-      <MainHero {...homeTwo} />
+      {/* <MainHero {...homeTwo} /> */}
       <Hero {...homeObj} />
       </>
   );
